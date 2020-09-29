@@ -19,14 +19,8 @@ const museoSchema = new Schema({
     link: String,
     city:   String,
     address: String,
-    hours: [{ Ma: String },
-        {Ti: String},
-        {Ke: String},
-        {To: String},
-        {Pe: String},
-        {La: String},
-        {Su: String}],
-    services: [{Number: String}]
+    hours: [{ day: String, open: String }],
+    services: [{service: String}]
 });
 
 const Museo = mongoose.model('Museo', museoSchema)
@@ -36,16 +30,14 @@ const museo = new Museo({
     link: "https://museot.fi/museohaku/index.php?museo_id=22095",
     city:   "Ulvila",
     address: " Friitalantie 11 28400 Ulvila",
-    hours: [{ Ma: "Suljettu" },
-        {Ti: "Suljettu"},
-        {Ke: "Suljettu"},
-        {To: "Suljettu"},
-        {Pe: "Suljettu"},
-        {La: "Suljettu"},
-        {Su: "Suljettu"}],
-    services: [{"0": "Kahvila"},
-        {"1": "Myyntipiste"},
-        {"2": "Pys\u00e4k\u00f6intipaikka"}]
+    hours: [{ day: "Ma", open: "Suljettu" },
+        {day: "Ti", open:  "Suljettu"},
+        {day: "Ke", open: "Suljettu"},
+        {day: "To", open:  "Suljettu"},
+        {day: "Pe", open:  "Suljettu"},
+        {day: "La", open:  "Suljettu"},
+        {day: "Su", open:  "Suljettu"}],
+    services: [{service:"Kahvila"}, {service:"Myyntipiste"}, {service:"Pys\u00e4k\u00f6intipaikka"}]
 })
 
 museo.save().then(response => {
