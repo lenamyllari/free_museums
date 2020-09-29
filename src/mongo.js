@@ -41,7 +41,7 @@ const museo = new Museo({
 })
 
 museo.save().then(response => {
-    console.log('note saved!')
+    console.log('museum saved!')
     mongoose.connection.close()
 })
 

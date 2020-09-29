@@ -6,6 +6,9 @@ import {
 
 import Add from './components/Add'
 import Search from './components/Search'
+import MuseumList from './components/MuseumsList'
+
+import './App.css'
 
 const App = () =>{
   const padding = {
@@ -13,7 +16,7 @@ const App = () =>{
   };
 
   return (
-      <div className="container">
+      <div className="mystyle" >
         <Router>
           <div>
             <Link style={padding} to="/">search</Link>
@@ -28,6 +31,9 @@ const App = () =>{
             </Route>
           </Switch>
         </Router>
+          <div>
+              <MuseumList></MuseumList>
+          </div>
       </div>
   );
 }

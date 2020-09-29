@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.mystyle {
+    display: flex;
+    flex-direction: column;
+  background-color: dodgerblue;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+
+
