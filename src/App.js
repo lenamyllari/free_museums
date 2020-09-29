@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch, Route, Link
+} from 'react-router-dom'
+
+import Add from './Add'
+import Search from './Search'
 
 function App() {
+  const padding = {
+    padding: 5
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="container">
+        <Router>
+          <div>
+            <Link style={padding} to="/">search</Link>
+            <Link style={padding} to="/add">add</Link>
+          </div>
+
+          <Switch>
+            <Route path="/">
+              <Search />
+            </Route>
+            <Route path="/add">
+              <Add />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
   );
 }
 
