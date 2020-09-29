@@ -1,14 +1,12 @@
 import React from "react";
 
-function Add() {
+const Add=()=> {
     return (
         <div>
+
             <form>
                 <label>Name
                     <input name="name"/>
-                </label>
-                <label>City
-                    <input name="city"/>
                 </label>
                 <label>City
                     <input name="city"/>
@@ -28,6 +26,6 @@ function Add() {
             </form>
         </div>
     )
-}
+};
 
-export default Add
+export default Add;

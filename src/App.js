@@ -4,10 +4,10 @@ import {
   Switch, Route, Link
 } from 'react-router-dom'
 
-import Add from './Add'
-import Search from './Search'
+import Add from './components/Add'
+import Search from './components/Search'
 
-function App() {
+const App = () =>{
   const padding = {
     padding: 5
   };
@@ -19,9 +19,8 @@ function App() {
             <Link style={padding} to="/">search</Link>
             <Link style={padding} to="/add">add</Link>
           </div>
-
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Search />
             </Route>
             <Route path="/add">
