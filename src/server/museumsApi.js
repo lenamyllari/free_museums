@@ -11,6 +11,8 @@ const MongoClient = mongodb.MongoClient;
 const dbConnectionUrl = process.env.MONGODB_URI
 
 
+
+
 MongoClient.connect(dbConnectionUrl, function (err, dbInstance) {
     if (err) {
         console.log(`[MongoDB connection] ERROR: ${err}`);
@@ -50,7 +52,21 @@ MongoClient.connect(dbConnectionUrl, function (err, dbInstance) {
 });*/
 
 router.get('/museums', (req, res) => {
-       return res
+    console.log("api")
+    const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
+    client.connect(err => {
+        const collection = client.db(dbName).collection(collectionName);
+        collection.find().toArray(function (err, result) {
+
+            if (err) throw err;
+
+            console.log(result);
+            return result
+        });
+        client.close();
+    });
+
+       //return res
 
 })
 
