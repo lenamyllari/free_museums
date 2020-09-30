@@ -1,10 +1,12 @@
 import React from "react";
+import '../App.css'
 
 const Add=()=> {
     return (
         <div>
 
-            <form>
+            <form className="form">
+
                 <label>Name
                     <input name="name"/>
                 </label>

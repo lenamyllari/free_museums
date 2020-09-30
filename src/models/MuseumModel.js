@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 mongoose.set('useFindAndModify', false);
+/*
 const url = process.env.MONGODB_URI;
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -9,6 +10,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch((error) => {
         console.log('error connecting to MongoDB:', error.message)
     })
+*/
 
 const museumSchema = new mongoose.Schema({
     name:  String,
@@ -26,7 +28,6 @@ museumSchema.set('toJSON', {
         delete returnedObject.__v
     }
 })
-
-module.exports = mongoose.model('Museo', museumSchema)
-
+const Museum = mongoose.model('Museum', museumSchema)
+module.exports = Museum;
 
