@@ -23,10 +23,7 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
-/*const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://api_kurssi:Metropolia1@museums.fyo0p.mongodb.net/FreeMuseums?retryWrites=true&w=majority', {
-    useNewUrlParser: true
-});*/
+
 
 
 

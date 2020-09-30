@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Museum = ({ museum }) => {
     return (
         <li>{museum.name},
