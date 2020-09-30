@@ -1,19 +1,29 @@
 import React, {Component} from 'react';
-import noteService from '../services/museums'
 import Museum from './Museum'
-
+const axios = require('axios');
 export default class  List extends Component  {
 
     state= {
         museums: [],
+        isLoaded: false,
     };
 
     componentDidMount() {
-        noteService.getAll().then(res=>{
-            console.log("get all" + res[1].done);
-            this.setState({museums: res})
-        })
-    };
+        var uri = "http://localhost:3001/api/museums";
+        axios
+            .get(uri)
+            .then(res => {
+                console.log(res)
+                this.setState({
+                    isLoaded: true,
+                    museums: res.museums
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
+
+    }
 
 
     render() {
