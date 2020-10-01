@@ -1,31 +1,14 @@
 import React from "react";
 import '../App.css'
+import MuseumForm from './MuseumForm'
 
 const Add=()=> {
     return (
         <div>
 
-            <form className="form">
-
-                <label>Name
-                    <input name="name"/>
-                </label>
-                <label>City
-                    <input name="city"/>
-                </label>
-                <label>Address
-                    <input name="address"/>
-                </label>
-                <label>Website
-                    <input name="website"/>
-                </label>
-                <label>Theme
-                    <input name="theme"/>
-                </label>
-                <label>Opening hours</label>
-                <label>Services</label>
-                <button type="submit">Save</button>
-            </form>
+            <div id="form">
+            <MuseumForm></MuseumForm>
+            </div>
         </div>
     )
 };

@@ -16,7 +16,7 @@ export default class  List extends Component  {
                 console.log(res)
                 this.setState({
                     isLoaded: true,
-                    museums: res.museums
+                    museums: res.data
                 });
             })
             .catch(err => {
@@ -31,7 +31,7 @@ export default class  List extends Component  {
                 <h1>Museums</h1>
                 <ul>
                     {this.state.museums.map(museum =>
-                        <Museum key={museum.id} museum={museum}/>
+                        <Museum key={museum._id} museum={museum}/>
                     )}
                 </ul>
             </div>
