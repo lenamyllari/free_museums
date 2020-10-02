@@ -30,7 +30,7 @@ const App = () =>{
               </div>
             </Route>
             <Route path="/add">
-              <Add />
+              <Add classname="myform"/>
             </Route>
           </Switch>
         </Router>

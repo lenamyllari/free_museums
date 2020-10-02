@@ -3,10 +3,10 @@ import React from 'react'
 
 const Museum = ({ museum }) => {
     return (
-        <li>{museum.name},
-            Municipality: {museum.city},
-            Address: {museum.address},
-            WWW: {museum.link}
+        <li><h3>{museum.name}</h3>
+            <b>Municipality:</b> {museum.city},
+            <b>Address: </b>{museum.address},
+            <b>WWW:</b> <a href={museum.link}>{museum.link}</a>
         </li>
     )
 }

@@ -4,10 +4,10 @@ import MuseumForm from './MuseumForm'
 
 const Add=()=> {
     return (
-        <div>
+        <div >
 
-            <div id="form">
-            <MuseumForm></MuseumForm>
+            <div >
+            <MuseumForm ></MuseumForm>
             </div>
         </div>
     )

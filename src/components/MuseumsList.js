@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import Museum from './Museum'
+import '../App.css'
+
 const axios = require('axios');
+
 export default class  List extends Component  {
 
     state= {
@@ -29,7 +32,7 @@ export default class  List extends Component  {
         return (
             <div>
                 <h1>Museums</h1>
-                <ul>
+                <ul className="museumList">
                     {this.state.museums.map(museum =>
                         <Museum key={museum._id} museum={museum}/>
                     )}
