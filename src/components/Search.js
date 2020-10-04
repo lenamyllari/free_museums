@@ -1,6 +1,11 @@
 import React, {Component} from "react";
 import MuseumList from './MuseumsList'
+import Select from 'react-select';
+import themeOptions from '../data/themeOptions'
+import serviceOptions from '../data/serviceOptions'
+
 const axios = require('axios');
+
 
 export default class Search  extends Component {
 
@@ -9,8 +14,11 @@ export default class Search  extends Component {
             museums: [],
             isLoaded: false,
             searchWord: "",
-            searchParameter: ""
+            searchParameter: "",
+            selectedThemeOption: null,
+            selectedServiceOption: null,
         }
+
 
     renderList =(event) => {
         var chosenMuseums = []
@@ -26,6 +34,26 @@ export default class Search  extends Component {
         };
         this.setState({isLoaded: true})
     }
+
+    themeSelect =(e) =>{
+            console.log(e)
+    };
+    handleThemeSelect= selectedThemeOption => {
+        this.setState({
+            selectedThemeOption: selectedThemeOption ,
+        });
+        console.log(`Option selected:`, selectedThemeOption);
+    };
+
+    handleServiceSelect= selectedServiceOption => {
+        this.setState({
+            selectedServiceOption: selectedServiceOption ,
+        });
+        console.log(`Option selected:`, selectedServiceOption);
+    };
+    serviceSelect =(e) =>{
+        console.log(e)
+    };;
 
 
     componentDidMount(){
@@ -48,19 +76,48 @@ export default class Search  extends Component {
     }
 
     render() {
+        const { selectedThemeOption } = this.state;
+        const { selectedServiceOption } = this.state;
         return (
             <div>
-                <form onSubmit={e => e.preventDefault()}>
-                    <label>Name
-                        <input name="name" onChange={this.onNameChange}/>
-                    </label>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm">
+                            <h3>Search by name or city</h3>
+                            <form onSubmit={e => e.preventDefault()}>
+                                <label>Name
+                                    <input name="name" onChange={this.onNameChange}/>
+                                </label>
+                                <div onChange={this.onChangeValue}>
+                                    <input type="radio" value="City" name="parameter" /> City
+                                    <input type="radio" value="Name" name="parameter" /> Name
+                                </div>
+                                <button type="submit" onClick={this.renderList}>Search</button>
+                            </form>
+                        </div>
+                        <div className="col-sm">
+                            <h3>Search by theme</h3>
+                            <Select
+                                value={selectedThemeOption}
+                                onChange={this.handleThemeSelect}
+                                options={themeOptions}
+                            />
+                            <button type="submit" onClick={this.themeSelect}>Search</button>
 
-                    <div onChange={this.onChangeValue}>
-                        <input type="radio" value="City" name="parameter" /> City
-                        <input type="radio" value="Name" name="parameter" /> Name
+                        </div>
+                        <div className="col-sm">
+                            <h3>Search by service</h3>
+                            <Select
+                                value={selectedServiceOption}
+                                onChange={this.handleServiceSelect}
+                                options={serviceOptions}
+                            />
+                            <button type="submit" onClick={this.serviceSelect}>Search</button>
+
+                        </div>
                     </div>
-                    <button type="submit" onClick={this.renderList}>Search</button>
-                </form>
+                </div>
+
                 <div>
                    {this.state.isLoaded && <MuseumList museums={this.state.museums}></MuseumList>}
                 </div>

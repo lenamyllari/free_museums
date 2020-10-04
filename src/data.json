@@ -4,105 +4,56 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21049",
     "city": "Forssa",
     "address": " Wahreninkatu 4, A-rappu, Kehr\u00e4\u00e4m\u00f6 (Kirjastotalo)",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "La",
-        "open": "10:00-14:00"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-16:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "12:00-16:00",
+      "thursday": "Suljettu",
+      "friday": "12:00-16:00",
+      "saturday": "10:00-14:00",
+      "sunday": "12:00-16:00"
+    },
     "services": [
-      {
-        "service": "Kokoushuone"
-      },
-      {
-        "service": "Lastenhoitotila"
-      },
-      {
-        "service": "Leikkitila/tila perheille"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      },
-      {
-        "service": "Tila omien ev\u00e4iden sy\u00f6nnille"
-      }
-    ]
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Invapys\u00e4k\u00f6inti",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Kosketeltavia esineit\u00e4",
+      "Kokoushuone",
+      "Lastenhoitotila",
+      "Leikkitila/tila perheille",
+      "Museokauppa",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka",
+      "Tila omien ev\u00e4iden sy\u00f6nnille"
+    ],
+    "themes": []
   },
   {
     "name": "Friitalan Nahkamuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=22095",
     "city": "Ulvila",
     "address": " Friitalantie 11 28400 Ulvila",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Kosketeltavia esineit\u00e4",
+      "Kahvila",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Design ja arkkitehtuuri",
+      "Erikoiset",
+      "Historia",
+      "K\u00e4sity\u00f6"
     ]
   },
   {
@@ -110,46 +61,19 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=12022018",
     "city": "Raasepori",
     "address": " Gustav Wasas gata/Kustaa Vaasan katu 11,",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-17:00"
-      }
-    ],
-    "services": [
-      {
-        "service": "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy"
-      },
-      {
-        "service": "Esteet\u00f6n wc"
-      },
-      {
-        "service": "Tilattavissa opastuksia erityisryhmille"
-      }
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-17:00",
+      "wednesday": "11:00-17:00",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-17:00",
+      "sunday": "11:00-17:00"
+    },
+    "services": [],
+    "themes": [
+      "Nykytaide",
+      "Taide"
     ]
   },
   {
@@ -157,43 +81,26 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21981",
     "city": "Espoo",
     "address": "  Entressen kauppakeskus, Siltakatu 11, 02770 Espoo",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-20:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "La",
-        "open": "12:00-18:00"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-16:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-19:00",
+      "wednesday": "11:00-19:00",
+      "thursday": "11:00-20:00",
+      "friday": "11:00-19:00",
+      "saturday": "12:00-18:00",
+      "sunday": "12:00-16:00"
+    },
     "services": [
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Invapys\u00e4k\u00f6inti",
+      "Kosketeltavia esineit\u00e4",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Museokauppa",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Erikoiset",
+      "Kansainv\u00e4list\u00e4"
     ]
   },
   {
@@ -201,58 +108,36 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21099",
     "city": "Helsinki",
     "address": " Aleksanterinkatu 16, 00170 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "11:00-19:00",
+      "tuesday": "11:00-19:00",
+      "wednesday": "11:00-19:00",
+      "thursday": "11:00-19:00",
+      "friday": "11:00-19:00",
+      "saturday": "11:00-17:00",
+      "sunday": "11:00-17:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Kokoushuone"
-      },
-      {
-        "service": "Lastenhoitotila"
-      },
-      {
-        "service": "Leikkitila/tila perheille"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Oleskelutila istumapaikoilla"
-      },
-      {
-        "service": "Tila omien ev\u00e4iden sy\u00f6nnille"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Kosketeltavia esineit\u00e4",
+      "Lainattava py\u00f6r\u00e4tuoli",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Kahvila",
+      "Kokoushuone",
+      "Lastenhoitotila",
+      "Leikkitila/tila perheille",
+      "Museokauppa",
+      "Oleskelutila istumapaikoilla",
+      "Tila omien ev\u00e4iden sy\u00f6nnille"
+    ],
+    "themes": [
+      "Design ja arkkitehtuuri",
+      "Historia",
+      "Kansainv\u00e4list\u00e4",
+      "Lapsille",
+      "Satoja vuosia sitten"
     ]
   },
   {
@@ -260,40 +145,24 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21110",
     "city": "Helsinki",
     "address": " Fabianinkatu 33, 3. krs",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "Ti",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "12:00-17:00",
+      "tuesday": "12:00-17:00",
+      "wednesday": "12:00-17:00",
+      "thursday": "12:00-17:00",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Myyntipiste"
+    ],
+    "themes": [
+      "Historia",
+      "Suuret suomalaiset",
+      "Tiede ja tekniikka"
     ]
   },
   {
@@ -301,40 +170,25 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21264",
     "city": "Kajaani",
     "address": " Linnankatu 14, 87100 Kajaani",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Ti",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "To",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "10:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "10:00-17:00",
+      "tuesday": "10:00-17:00",
+      "wednesday": "11:00-19:00",
+      "thursday": "10:00-17:00",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "10:00-17:00"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Myyntipiste"
+    ],
+    "themes": [
+      "Nykytaide",
+      "Taide"
     ]
   },
   {
@@ -342,49 +196,34 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21312",
     "city": "Kemi",
     "address": " Kulttuurikeskus Marina Takalon katu 3 94100 Kemi",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "La",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "10:00-15:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-18:00",
+      "wednesday": "11:00-18:00",
+      "thursday": "11:00-18:00",
+      "friday": "11:00-18:00",
+      "saturday": "10:00-15:00",
+      "sunday": "10:00-15:00"
+    },
     "services": [
-      {
-        "service": "Auditorio"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Induktiosilmukka",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Lainattava py\u00f6r\u00e4tuoli",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Auditorio",
+      "Museokauppa",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "Satoja vuosia sitten",
+      "Sotien historia",
+      "Taide",
+      "Valokuva"
     ]
   },
   {
@@ -392,52 +231,33 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21309",
     "city": "Kemi",
     "address": " Marina Takalon katu 3, 94100 Kemi",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "La",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "10:00-15:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-18:00",
+      "wednesday": "11:00-18:00",
+      "thursday": "11:00-18:00",
+      "friday": "11:00-18:00",
+      "saturday": "10:00-15:00",
+      "sunday": "10:00-15:00"
+    },
     "services": [
-      {
-        "service": "Auditorio"
-      },
-      {
-        "service": "Lastenhoitotila"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Induktiosilmukka",
+      "Invapys\u00e4k\u00f6inti",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Lainattava py\u00f6r\u00e4tuoli",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Auditorio",
+      "Lastenhoitotila",
+      "Museokauppa",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Nykytaide",
+      "Taide",
+      "Vanhat mestarit"
     ]
   },
   {
@@ -445,49 +265,25 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21251",
     "city": "Jyv\u00e4skyl\u00e4",
     "address": " Vesilinna, Ihantolantie 5, 40100 Jyv\u00e4skyl\u00e4",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "La",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-18:00",
+      "wednesday": "11:00-18:00",
+      "thursday": "11:00-18:00",
+      "friday": "11:00-18:00",
+      "saturday": "12:00-17:00",
+      "sunday": "12:00-17:00"
+    },
     "services": [
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      },
-      {
-        "service": "Tila omien ev\u00e4iden sy\u00f6nnille"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista",
+      "Museokauppa",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka",
+      "Tila omien ev\u00e4iden sy\u00f6nnille"
+    ],
+    "themes": [
+      "Luonto ja el\u00e4imet",
+      "Tiede ja tekniikka"
     ]
   },
   {
@@ -495,40 +291,22 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=9021",
     "city": "Jyv\u00e4skyl\u00e4",
     "address": " Toivolan Vanha Piha, Cygnaeuksenkatu 2",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "11:00-16:00"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-16:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-16:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-16:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-16:00"
-      },
-      {
-        "day": "La",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "11:00-16:00",
+      "tuesday": "11:00-16:00",
+      "wednesday": "11:00-16:00",
+      "thursday": "11:00-16:00",
+      "friday": "11:00-16:00",
+      "saturday": "10:00-15:00",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Museokauppa"
-      }
+      "Museokauppa"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "K\u00e4sity\u00f6"
     ]
   },
   {
@@ -536,40 +314,20 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21250",
     "city": "Jyv\u00e4skyl\u00e4",
     "address": " Seminaarinm\u00e4ki, rakennus S, 40100 Jyv\u00e4skyl\u00e4",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "12:00-17:00",
+      "thursday": "12:00-17:00",
+      "friday": "12:00-17:00",
+      "saturday": "12:00-16:00",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Tiede ja tekniikka"
     ]
   },
   {
@@ -577,43 +335,25 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21040",
     "city": "Lapua",
     "address": " Kulttuurikeskus Vanha Paukku",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-17:00",
+      "wednesday": "11:00-17:00",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-15:00",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Museokauppa",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Nykytaide",
+      "Taide"
     ]
   },
   {
@@ -621,43 +361,24 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21570",
     "city": "Nurmes",
     "address": " Kirkkokatu 20, 75500 Nurmes",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Ti",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "10:00-17:00",
+      "tuesday": "10:00-17:00",
+      "wednesday": "10:00-17:00",
+      "thursday": "10:00-17:00",
+      "friday": "10:00-17:00",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Kosketeltavia esineit\u00e4",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Taide",
+      "Valokuva"
     ]
   },
   {
@@ -665,58 +386,34 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=22024",
     "city": "Raisio",
     "address": " Raision kaupungintalo / Nallinkatu 2, 21200, Raisio",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "10:00-16:00"
-      },
-      {
-        "day": "Ke",
-        "open": "10:00-19:00"
-      },
-      {
-        "day": "To",
-        "open": "10:00-16:00"
-      },
-      {
-        "day": "Pe",
-        "open": "10:00-16:00"
-      },
-      {
-        "day": "La",
-        "open": "12:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-15:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "10:00-16:00",
+      "wednesday": "10:00-19:00",
+      "thursday": "10:00-16:00",
+      "friday": "10:00-16:00",
+      "saturday": "12:00-15:00",
+      "sunday": "12:00-15:00"
+    },
     "services": [
-      {
-        "service": "Catering"
-      },
-      {
-        "service": "Kokoushuone"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Oleskelutila istumapaikoilla"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      },
-      {
-        "service": "Tila omien ev\u00e4iden sy\u00f6nnille"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Invapys\u00e4k\u00f6inti",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Catering",
+      "Kokoushuone",
+      "Museokauppa",
+      "Myyntipiste",
+      "Oleskelutila istumapaikoilla",
+      "Pys\u00e4k\u00f6intipaikka",
+      "Tila omien ev\u00e4iden sy\u00f6nnille"
+    ],
+    "themes": [
+      "Historia",
+      "Nykytaide",
+      "Satoja vuosia sitten",
+      "Taide"
     ]
   },
   {
@@ -724,61 +421,34 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21293",
     "city": "Karttula",
     "address": " Riuttalantie 719, 72100 Karttula",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "12:00-17:00",
+      "saturday": "12:00-17:00",
+      "sunday": "12:00-17:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Kokoushuone"
-      },
-      {
-        "service": "Lastenhoitotila"
-      },
-      {
-        "service": "Leikkitila/tila perheille"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      },
-      {
-        "service": "Ravintola"
-      },
-      {
-        "service": "Tila omien ev\u00e4iden sy\u00f6nnille"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista: Kahvila-Ravintola Katrin Kammarj\u00edin",
+      "Esteet\u00f6n wc",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Kahvila",
+      "Kokoushuone",
+      "Lastenhoitotila",
+      "Leikkitila/tila perheille",
+      "Museokauppa",
+      "Pys\u00e4k\u00f6intipaikka",
+      "Ravintola",
+      "Tila omien ev\u00e4iden sy\u00f6nnille"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "Lapsille",
+      "Luonto ja el\u00e4imet",
+      "Satoja vuosia sitten"
     ]
   },
   {
@@ -786,46 +456,29 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21986",
     "city": "Salo",
     "address": " Mariankatu 14, 24240 Salo",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Invapys\u00e4k\u00f6inti",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Museokauppa",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Kansainv\u00e4list\u00e4",
+      "Nykytaide",
+      "Taide",
+      "Valokuva"
     ]
   },
   {
@@ -833,43 +486,24 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=22058",
     "city": "Helsinki",
     "address": " Snellmaninkatu 2, 00170 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-16:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-16:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-17:00",
+      "wednesday": "11:00-17:00",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-16:00",
+      "sunday": "11:00-16:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Museokauppa"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Kahvila",
+      "Museokauppa"
+    ],
+    "themes": [
+      "Historia",
+      "Kansainv\u00e4list\u00e4"
     ]
   },
   {
@@ -877,40 +511,23 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21152",
     "city": "Helsinki",
     "address": " Pohjoinen Hesperiankatu 7, 6. krs, 00260 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "14:00-18:00"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-16:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "14:00-18:00",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "12:00-16:00"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      }
+      "Tilattavissa opastuksia erityisryhmille",
+      "Myyntipiste"
+    ],
+    "themes": [
+      "Kansainv\u00e4list\u00e4",
+      "Kotimuseot ja talomuseot",
+      "Taide"
     ]
   },
   {
@@ -918,49 +535,30 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21599",
     "city": "Oulu",
     "address": " Turkansaarentie 165, 90310 Oulu",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista: kirkko, maalaistalo ja kahvila",
+      "Esteet\u00f6n wc",
+      "Invapys\u00e4k\u00f6inti",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Kahvila",
+      "Museokauppa",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "Linnat ja ulkomuseot",
+      "Luonto ja el\u00e4imet"
     ]
   },
   {
@@ -968,49 +566,28 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21920",
     "city": "Vantaa",
     "address": " Hertaksentie 1, 01300 Vantaa",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-16:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-16:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-18:00",
+      "wednesday": "11:00-18:00",
+      "thursday": "11:00-18:00",
+      "friday": "11:00-18:00",
+      "saturday": "11:00-16:00",
+      "sunday": "11:00-16:00"
+    },
     "services": [
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Oleskelutila istumapaikoilla"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      },
-      {
-        "service": "Tila omien ev\u00e4iden sy\u00f6nnille"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista: Esteet\u00f6n kulku tilap\u00e4isesti vain museon 1. kerrokseen.",
+      "Esteet\u00f6n wc",
+      "Invapys\u00e4k\u00f6inti",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Museokauppa",
+      "Oleskelutila istumapaikoilla",
+      "Pys\u00e4k\u00f6intipaikka",
+      "Tila omien ev\u00e4iden sy\u00f6nnille"
+    ],
+    "themes": [
+      "Historia"
     ]
   },
   {
@@ -1018,46 +595,27 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21985",
     "city": "Vantaa",
     "address": " Paalutori 3, 01600 Vantaa",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "To",
-        "open": "13:00-20:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-18:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-16:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-16:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-18:00",
+      "wednesday": "11:00-18:00",
+      "thursday": "13:00-20:00",
+      "friday": "11:00-18:00",
+      "saturday": "11:00-16:00",
+      "sunday": "11:00-16:00"
+    },
     "services": [
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Museokauppa",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Nykytaide",
+      "Taide"
     ]
   },
   {
@@ -1065,49 +623,29 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21924",
     "city": "Varkaus",
     "address": " Wredenkatu 5 A, 78250 Varkaus",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "10:00-16:00"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "10:00-16:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "10:00-17:00",
+      "wednesday": "10:00-17:00",
+      "thursday": "10:00-17:00",
+      "friday": "10:00-16:00",
+      "saturday": "Suljettu",
+      "sunday": "10:00-16:00"
+    },
     "services": [
-      {
-        "service": "Kokoushuone"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Oleskelutila istumapaikoilla"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Kokoushuone",
+      "Museokauppa",
+      "Oleskelutila istumapaikoilla",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Taide",
+      "Valokuva"
     ]
   },
   {
@@ -1116,7 +654,8 @@
     "city": "Hirvensalmi",
     "address": " Pit\u00e4j\u00e4ntie 3, 52550 Hirvensalmi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Ahti Karjalaisen syntym\u00e4kotimuseo Lepola",
@@ -1124,7 +663,8 @@
     "city": "Hirvensalmi",
     "address": " Joutsantie 1729, 52620 Kuitula",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Alisg\u00e5rden",
@@ -1132,7 +672,8 @@
     "city": "Kirkkonummi",
     "address": " Alisg\u00e5rdintie 1, 02520 Kirkkonummi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Annalan kotiseutumuseo",
@@ -1140,7 +681,8 @@
     "city": "Pyh\u00e4joki",
     "address": " Annalantie 20, 86100 Pyh\u00e4joki",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Askolan kotiseutumuseo",
@@ -1148,7 +690,8 @@
     "city": "Askola",
     "address": " Nalkkilantie 4, Kirkonkyl\u00e4, 07500 Askola",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Baggen Museo / Rantasalmen Virkistys- ja Sivistyss\u00e4\u00e4ti\u00f6",
@@ -1156,92 +699,51 @@
     "city": "-",
     "address": " Kyl\u00e4tie 58 58900 Rantasalmi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Bj\u00f6rkboda l\u00e5smuseum (Bj\u00f6rkbodan Lukkomuseo)",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21020",
     "city": "Kemi\u00f6nsaari",
     "address": " 25860 Bj\u00f6rkboda",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "14:00-18:00"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "14:00-18:00"
-      },
-      {
-        "day": "Su",
-        "open": "14:00-18:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "14:00-18:00",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "14:00-18:00",
+      "sunday": "14:00-18:00"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      }
-    ]
+      "Myyntipiste"
+    ],
+    "themes": []
   },
   {
     "name": "Diamus - Helsingin Diakonissalaitoksen museo ",
     "link": "https://museot.fi/museohaku/index.php?museo_id=22097",
     "city": "Helsinki",
     "address": " Alppikatu 2, P\u00e4\u00e4rakennus, 00530 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "09:00-15:00"
-      },
-      {
-        "day": "Ti",
-        "open": "09:00-15:00"
-      },
-      {
-        "day": "Ke",
-        "open": "09:00-15:00"
-      },
-      {
-        "day": "To",
-        "open": "09:00-15:00"
-      },
-      {
-        "day": "Pe",
-        "open": "09:00-15:00"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "09:00-15:00",
+      "tuesday": "09:00-15:00",
+      "wednesday": "09:00-15:00",
+      "thursday": "09:00-15:00",
+      "friday": "09:00-15:00",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
-    ]
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Invapys\u00e4k\u00f6inti",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Kahvila",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": []
   },
   {
     "name": "Enonkosken kotiseutumuseo",
@@ -1249,7 +751,8 @@
     "city": "Enonkoski",
     "address": " Kirkkotie 2, 58175 Enonkoski",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Enonteki\u00f6n kotiseutumuseo",
@@ -1257,85 +760,44 @@
     "city": "Enonteki\u00f6",
     "address": " Enonteki\u00f6n kirkonkyl\u00e4lt\u00e4 3 km Vuontisj\u00e4rven suuntaan",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Espoon kaupunginmuseo, Huvilamuseo Villa Rulludd",
     "link": "https://museot.fi/museohaku/index.php?museo_id=22079",
     "city": "Espoo",
     "address": " Rullaniementie 15, 02260 Espoo",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
-    "services": []
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
+    "services": [],
+    "themes": []
   },
   {
     "name": "Espoon kaupunginmuseo, Koulumuseo Lagstad",
     "link": "https://museot.fi/museohaku/index.php?museo_id=22059",
     "city": "Espoo",
     "address": " Vanha Lagstadintie 4, 02770 Espoo",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "14:00-18:00"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "14:00-18:00",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
-    ]
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": []
   },
   {
     "name": "Haapaveden kotiseutumuseo",
@@ -1343,47 +805,31 @@
     "city": "Haapavesi",
     "address": " Myyrinkuja 1, 86600 Haapavesi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Halikon museo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21057",
     "city": "Salo",
     "address": " Kirkkorinne 7, 24800 Halikko",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-17:00",
+      "sunday": "11:00-17:00"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "Satoja vuosia sitten"
     ]
   },
   {
@@ -1392,7 +838,8 @@
     "city": "Harjavalta",
     "address": " Sairaalantie 14 (talo nro 15), 29200 Harjavalta",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Haukiputaan kotiseutumuseo",
@@ -1400,7 +847,8 @@
     "city": "Haukipudas",
     "address": " Kirkkotie 7, 90830 Haukipudas",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Hein\u00e4veden kotiseutumuseo",
@@ -1408,56 +856,36 @@
     "city": "Hein\u00e4vesi",
     "address": " Kirkkotie 3, 79701 Hein\u00e4vesi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Helsingin kaupunginmuseo, Ratikkamuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21156",
     "city": "Helsinki",
     "address": " T\u00f6\u00f6l\u00f6nkatu 51 A (Kulttuuritehdas Korjaamo), 00250 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "11:00-17:00",
+      "tuesday": "11:00-17:00",
+      "wednesday": "11:00-17:00",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-17:00",
+      "sunday": "11:00-17:00"
+    },
     "services": [
-      {
-        "service": "Auditorio"
-      },
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Ravintola"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Auditorio",
+      "Kahvila",
+      "Museokauppa",
+      "Ravintola"
+    ],
+    "themes": [
+      "Historia",
+      "Tiede ja tekniikka",
+      "Vesill\u00e4, teill\u00e4 ja ilmassa"
     ]
   },
   {
@@ -1465,85 +893,44 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21101",
     "city": "Helsinki",
     "address": " Kristianinkatu 12, 00170 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "11:00-17:00",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-17:00",
+      "sunday": "11:00-17:00"
+    },
     "services": [
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Tila omien ev\u00e4iden sy\u00f6nnille"
-      }
-    ]
+      "Tilattavissa opastuksia erityisryhmille",
+      "Museokauppa",
+      "Tila omien ev\u00e4iden sy\u00f6nnille"
+    ],
+    "themes": []
   },
   {
     "name": "Helsingin kaupunginmuseo, Sederholmin talo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21158",
     "city": "Helsinki",
     "address": " Aleksanterinkatu 16-18, 00170 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "09:00-19:00"
-      },
-      {
-        "day": "Ti",
-        "open": "09:00-19:00"
-      },
-      {
-        "day": "Ke",
-        "open": "09:00-19:00"
-      },
-      {
-        "day": "To",
-        "open": "09:00-19:00"
-      },
-      {
-        "day": "Pe",
-        "open": "09:00-19:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "09:00-19:00",
+      "tuesday": "09:00-19:00",
+      "wednesday": "09:00-19:00",
+      "thursday": "09:00-19:00",
+      "friday": "09:00-19:00",
+      "saturday": "11:00-17:00",
+      "sunday": "11:00-17:00"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      }
-    ]
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Kosketeltavia esineit\u00e4",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Myyntipiste"
+    ],
+    "themes": []
   },
   {
     "name": "Herraskosken kanavamuseo",
@@ -1551,7 +938,8 @@
     "city": "Virrat",
     "address": " Herrasksentie 16, 34800 Virrat",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Hirvensalmen kotiseutumuseo",
@@ -1559,7 +947,8 @@
     "city": "Hirvensalmi",
     "address": " Junnankuja 25, 52550 Hirvensalmi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Honkajoen museo",
@@ -1567,7 +956,8 @@
     "city": "Honkajoki",
     "address": " Hongontie 8, 38950 Honkajoki",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Iin kotiseutumuseo ja museokahvila Huilinki",
@@ -1575,54 +965,29 @@
     "city": "Ii",
     "address": " Puistotie 4, 91100 Ii",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Jan Karlsg\u00e5rdens friluftsmuseum (Ulkoilmamuseo Jan Karlsg\u00e5rden )",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21786",
     "city": "Sund",
     "address": " 22520 Kastelholm, \u00c5land",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Ti",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "10:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "10:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "10:00-17:00",
+      "tuesday": "10:00-17:00",
+      "wednesday": "10:00-17:00",
+      "thursday": "10:00-17:00",
+      "friday": "10:00-17:00",
+      "saturday": "10:00-17:00",
+      "sunday": "10:00-17:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Ravintola"
-      }
-    ]
+      "Kahvila",
+      "Museokauppa",
+      "Ravintola"
+    ],
+    "themes": []
   },
   {
     "name": "Jeppo hembygdsmuseum (Jepuan kotiseutumuseo)",
@@ -1630,44 +995,25 @@
     "city": "Uusikaarlepyy",
     "address": " Kyrkv\u00e4gen, 66850 Jepua",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Jyv\u00e4skyl\u00e4n kunnallistekniikan museo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=9059",
     "city": "Jyv\u00e4skyl\u00e4",
     "address": " K\u00f6nkk\u00f6l\u00e4, Vesangantie 37, Jyv\u00e4skyl\u00e4",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "Ke",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "To",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "Pe",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
-    "services": []
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "12:00-16:00",
+      "wednesday": "12:00-16:00",
+      "thursday": "12:00-16:00",
+      "friday": "12:00-16:00",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
+    "services": [],
+    "themes": []
   },
   {
     "name": "J\u00e4ppil\u00e4n kotiseutumuseo",
@@ -1675,7 +1021,8 @@
     "city": "Pieks\u00e4m\u00e4ki",
     "address": " Kirkkotie 11, 77570 J\u00e4ppil\u00e4",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kaarteen sotamuseo",
@@ -1683,7 +1030,8 @@
     "city": "-",
     "address": " Rakettikaari 30 ",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kallion kotiseututalo",
@@ -1691,7 +1039,8 @@
     "city": "Oulainen",
     "address": " Kuljuntie 587, 86300 Pet\u00e4j\u00e4skoski",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kanavamuseo, Saimaan kanavan museo",
@@ -1699,7 +1048,8 @@
     "city": "Lappeenranta",
     "address": " Sulkuvartijankatu 16, 53300 Lappeenranta",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kansainv\u00e4linen kahvikuppimuseo",
@@ -1707,48 +1057,27 @@
     "city": "Posio",
     "address": " Pentikm\u00e4ki, Maaninkavaarantie 3, 97900 Posio",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Karhulahden kotiseutumuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21230",
     "city": "Joroinen",
     "address": " Golftie 14, 79600 Joroinen",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-15:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "11:00-17:00",
+      "wednesday": "11:00-17:00",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-15:00",
+      "sunday": "11:00-15:00"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      }
-    ]
+      "Myyntipiste"
+    ],
+    "themes": []
   },
   {
     "name": "Karvian museo- ja ulkomuseoalue",
@@ -1756,51 +1085,28 @@
     "city": "Karvia",
     "address": " 39930 Karvia",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kaunislehdon talomuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21171",
     "city": "Hyrynsalmi",
     "address": " Vanhatie 89, 89400 Hyrynsalmi",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "11:00-17:00",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-17:00",
+      "sunday": "11:00-17:00"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
-    ]
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": []
   },
   {
     "name": "Keih\u00e4slahden n\u00e4yttelytalo",
@@ -1808,44 +1114,25 @@
     "city": "-",
     "address": " Myllym\u00e4entie 2 34300 Kuru",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kemin ty\u00f6l\u00e4ismuseo ja Suomen K\u00e4hert\u00e4j\u00e4museo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21310",
     "city": "Kemi",
     "address": " Marttalankatu 6, Leinosenpolku, 94200 Kemi",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
-    "services": []
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
+    "services": [],
+    "themes": []
   },
   {
     "name": "Keski-Suomen sairaanhoitopiirin sairaalamuseo",
@@ -1853,47 +1140,33 @@
     "city": "Jyv\u00e4skyl\u00e4",
     "address": " Keskussairaalantie 19, 40620 Jyv\u00e4skyl\u00e4",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kieppi Kokkolan luonnontieteellinen museo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21355",
     "city": "Kokkola",
     "address": " Pitk\u00e4nsillankatu 26, 67100 Kokkola",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Oleskelutila istumapaikoilla"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Kosketeltavia esineit\u00e4",
+      "Oleskelutila istumapaikoilla"
+    ],
+    "themes": [
+      "Luonto ja el\u00e4imet",
+      "Tiede ja tekniikka"
     ]
   },
   {
@@ -1902,47 +1175,29 @@
     "city": "Kihni\u00f6",
     "address": " Kuruntie 18, 39820 Kihni\u00f6",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kiikalan kotiseutumuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21333",
     "city": "Salo",
     "address": " Porvarinpolku 10, 25390 Kiikala",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-15:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "12:00-15:00"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot"
     ]
   },
   {
@@ -1950,37 +1205,17 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21344",
     "city": "Salo",
     "address": " Kirkonkyl\u00e4ntie 30, 25470 Kisko",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "12:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-15:00"
-      }
-    ],
-    "services": []
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "12:00-15:00",
+      "sunday": "12:00-15:00"
+    },
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kiuruveden kotiseutumuseo",
@@ -1988,7 +1223,8 @@
     "city": "Kiuruvesi",
     "address": " Kirkkoharjuntie 2, 74700 Kiuruvesi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kodisjoen kotiseutumuseo",
@@ -1996,48 +1232,27 @@
     "city": "Rauma",
     "address": " Laitilantie 10,  27310 Kodisjoki",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Korteniemen perinnetila",
     "link": "https://museot.fi/museohaku/index.php?museo_id=9028",
     "city": "Tammela",
     "address": " Liesj\u00e4rven kansallispuisto, Korteniementie 270, 31350 Liesj\u00e4rvi",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
-    ]
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": []
   },
   {
     "name": "Korvenkyl\u00e4n Alinen Mylly",
@@ -2045,7 +1260,8 @@
     "city": "S\u00e4kyl\u00e4",
     "address": " Korventie 89, 27800 S\u00e4kyl\u00e4",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Koskenjalan Kenk\u00e4- ja Nahkamuseo",
@@ -2053,59 +1269,30 @@
     "city": "Juupajoki",
     "address": " Koskitie 43, 35500 Korkeakoski",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kreivinm\u00e4en ulkomuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21058",
     "city": "Salo",
     "address": " Viurilantie 34, 24910 Halikko as",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
-    "services": [
-      {
-        "service": "Historia"
-      },
-      {
-        "service": "Kotimuseot ja talomuseot"
-      },
-      {
-        "service": "Linnat ja ulkomuseot"
-      },
-      {
-        "service": "Luonto ja el\u00e4imet"
-      },
-      {
-        "service": "Satoja vuosia sitten"
-      }
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
+    "services": [],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "Linnat ja ulkomuseot",
+      "Luonto ja el\u00e4imet",
+      "Satoja vuosia sitten"
     ]
   },
   {
@@ -2114,7 +1301,8 @@
     "city": "Porvoo",
     "address": " Kr\u00e5k\u00f6sv\u00e4ngen 240, 07410 Kr\u00e5k\u00f6",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kuhmalahden kotiseutumuseo",
@@ -2122,59 +1310,44 @@
     "city": "Kuhmalahti",
     "address": " Kirkkotie 11, 36810 Kuhmalahti",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kuralan Kyl\u00e4m\u00e4ki",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21861",
     "city": "Turku",
     "address": " Jaanintie 45, 20540 Turku",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "10:00-18:00"
-      },
-      {
-        "day": "Ke",
-        "open": "10:00-18:00"
-      },
-      {
-        "day": "To",
-        "open": "10:00-18:00"
-      },
-      {
-        "day": "Pe",
-        "open": "10:00-18:00"
-      },
-      {
-        "day": "La",
-        "open": "10:00-18:00"
-      },
-      {
-        "day": "Su",
-        "open": "10:00-18:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "10:00-18:00",
+      "wednesday": "10:00-18:00",
+      "thursday": "10:00-18:00",
+      "friday": "10:00-18:00",
+      "saturday": "10:00-18:00",
+      "sunday": "10:00-18:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Lastenhoitotila"
-      },
-      {
-        "service": "Leikkitila/tila perheille"
-      },
-      {
-        "service": "Museokauppa"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista: Kokeiluverstas, Vanha Kanala, Tryskimakasiini",
+      "Esteet\u00f6n wc",
+      "Invapys\u00e4k\u00f6inti",
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Kosketeltavia esineit\u00e4",
+      "Lainattava py\u00f6r\u00e4tuoli",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Kahvila",
+      "Lastenhoitotila",
+      "Leikkitila/tila perheille",
+      "Museokauppa",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "K\u00e4sity\u00f6",
+      "Lapsille",
+      "Linnat ja ulkomuseot",
+      "Luonto ja el\u00e4imet"
     ]
   },
   {
@@ -2183,7 +1356,8 @@
     "city": "Yl\u00f6j\u00e4rvi",
     "address": " Myllym\u00e4entie 2, 34300 Kuru",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Kurun ulkomuseo, V\u00e4nrikki Stoolin tupa",
@@ -2191,94 +1365,53 @@
     "city": "Yl\u00f6j\u00e4rvi",
     "address": " Pokeluksentie 100, 34300 Kuru ",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Laivapatruunin koti ja Soveliuksen talon n\u00e4yttelytila",
     "link": "https://museot.fi/museohaku/index.php?museo_id=22006",
     "city": "Raahe",
     "address": " Rantakatu 36, 92100 Raahe",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
-    ]
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": []
   },
   {
     "name": "Lapuan Patruunatehtaan museo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=22192",
     "city": "Lapua",
     "address": " Kulttuurikeskus Vanha Paukku, Vanhan Paukun tie 1, 62100 Lapua",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-19:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "11:00-19:00",
+      "tuesday": "11:00-19:00",
+      "wednesday": "11:00-19:00",
+      "thursday": "11:00-19:00",
+      "friday": "11:00-19:00",
+      "saturday": "11:00-15:00",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Oleskelutila istumapaikoilla"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Esteet\u00f6n wc",
+      "Oleskelutila istumapaikoilla",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Erikoiset",
+      "Historia",
+      "Tiede ja tekniikka"
     ]
   },
   {
@@ -2286,87 +1419,43 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=21470",
     "city": "Lepp\u00e4virta",
     "address": " Savonkatu 28, 79100 Lepp\u00e4virta",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      }
-    ]
+      "Myyntipiste"
+    ],
+    "themes": []
   },
   {
     "name": "Liedon museo: Tarvasjoen kotiseutumuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21839",
     "city": "Lieto",
     "address": " Kyr\u00f6ntie 25, 21450 Tarvasjoki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-15:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "11:00-15:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Invapys\u00e4k\u00f6inti",
+      "Kahvila",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot"
     ]
   },
   {
@@ -2375,47 +1464,31 @@
     "city": "J\u00e4ms\u00e4",
     "address": " L\u00e4nkipohjantie 190, 35400 L\u00e4nkipohja",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Mannerheimin salonkivaunu",
     "link": "https://museot.fi/museohaku/index.php?museo_id=80218",
     "city": "Mikkeli",
     "address": " Rautatieasema, Mannerheimintie 1 , 50100 Mikkeli",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Erikoiset",
+      "Historia",
+      "Sotien historia",
+      "Vesill\u00e4, teill\u00e4 ja ilmassa"
     ]
   },
   {
@@ -2424,50 +1497,31 @@
     "city": "Merikarvia",
     "address": " Palosaarentie 56, 29900 Merikarvia",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Merimiehenkotimuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21601",
     "city": "Oulu",
     "address": " Pikisaarentie 6, 90100 Oulu",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Kokoushuone"
-      },
-      {
-        "service": "Myyntipiste"
-      }
+      "Kokoushuone",
+      "Myyntipiste"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "Satoja vuosia sitten"
     ]
   },
   {
@@ -2475,40 +1529,22 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=22130",
     "city": "Salo",
     "address": " Moisionkatu 18, 24100 Salo",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "To",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "Pe",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "La",
-        "open": "12:00-16:00"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-16:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "12:00-16:00",
+      "thursday": "12:00-16:00",
+      "friday": "12:00-16:00",
+      "saturday": "12:00-16:00",
+      "sunday": "12:00-16:00"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Istumapaikkoja n\u00e4yttelytiloissa",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot"
     ]
   },
   {
@@ -2517,7 +1553,8 @@
     "city": "Muonio",
     "address": " Lahenrannantie, 99300 Muonio",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Muuritutkimus Oy",
@@ -2525,7 +1562,8 @@
     "city": "Turku",
     "address": " Infokontti, Turun kauppatori",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Myrskyl\u00e4n kotiseutumuseo",
@@ -2533,7 +1571,8 @@
     "city": "Myrskyl\u00e4",
     "address": " Keskustie 5, 07600 Myrskyl\u00e4",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Nakkilan kotiseutumuseo, Juustomeijerimuseo",
@@ -2541,44 +1580,25 @@
     "city": "Nakkila",
     "address": " 29250 Nakkila",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Niitynp\u00e4\u00e4n ty\u00f6l\u00e4iskotimuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21254",
     "city": "Jyv\u00e4skyl\u00e4",
     "address": " Museopolku 1, Vaajakoski, Jyv\u00e4skyl\u00e4",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "12:30-15:00"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
-    "services": []
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "12:30-15:00",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
+    "services": [],
+    "themes": []
   },
   {
     "name": "Nuijamaan museo",
@@ -2586,66 +1606,25 @@
     "city": "Lappeenranta",
     "address": " Tassiantie 4, 54230 Nuijamaa",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "N\u00e4k\u00f6vammaismuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21155",
     "city": "Helsinki",
     "address": " Marjaniementie 74, 00930 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "12:00-15:00"
-      },
-      {
-        "day": "Ti",
-        "open": "12:00-15:00"
-      },
-      {
-        "day": "Ke",
-        "open": "12:00-15:00"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
-    "services": [
-      {
-        "service": "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy"
-      },
-      {
-        "service": "Esteet\u00f6n wc"
-      },
-      {
-        "service": "Induktiosilmukka"
-      },
-      {
-        "service": "Invapys\u00e4k\u00f6inti"
-      },
-      {
-        "service": "Kosketeltavia esineit\u00e4"
-      },
-      {
-        "service": "Lainattava py\u00f6r\u00e4tuoli"
-      },
-      {
-        "service": "Tilattavissa opastuksia erityisryhmille"
-      }
-    ]
+    "hours": {
+      "monday": "12:00-15:00",
+      "tuesday": "12:00-15:00",
+      "wednesday": "12:00-15:00",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
+    "services": [],
+    "themes": []
   },
   {
     "name": "Osuuspankkimuseo",
@@ -2653,101 +1632,49 @@
     "city": "Helsinki",
     "address": " Teollisuuskatu 1 F, 00510 Helsinki",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Oulunsalon kotiseutumuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21602",
     "city": "Oulu",
     "address": " J\u00e4\u00e4sk\u00f6ntie 5, 90460 Oulunsalo",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
-    "services": [
-      {
-        "service": "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista: Pirttiin."
-      },
-      {
-        "service": "Invapys\u00e4k\u00f6inti"
-      },
-      {
-        "service": "Kosketeltavia esineit\u00e4"
-      }
-    ]
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
+    "services": [],
+    "themes": []
   },
   {
     "name": "Panssarimuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21073",
     "city": "Hattula",
     "address": " Hattulantie 334, 13700 Parolannummi",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "Ti",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "Ke",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "To",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "Pe",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "La",
-        "open": "10:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "10:00-15:00"
-      }
-    ],
+    "hours": {
+      "monday": "10:00-15:00",
+      "tuesday": "10:00-15:00",
+      "wednesday": "10:00-15:00",
+      "thursday": "10:00-15:00",
+      "friday": "10:00-15:00",
+      "saturday": "10:00-15:00",
+      "sunday": "10:00-15:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
-    ]
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista",
+      "Esteet\u00f6n wc",
+      "Kosketeltavia esineit\u00e4",
+      "Kahvila",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": []
   },
   {
     "name": "Parikkalan kotiseutumuseo Hauta-Ollin m\u00f6kki ja meijerimuseo",
@@ -2755,47 +1682,30 @@
     "city": "Parikkala",
     "address": " Kirkkokatu 6, 59100 Parikkala",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Perni\u00f6n museo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21629",
     "city": "Salo",
     "address": " Museotie 9, 25500 Perni\u00f6",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "Satoja vuosia sitten"
     ]
   },
   {
@@ -2804,7 +1714,8 @@
     "city": "Keuruu",
     "address": " Koipikankaantie 1450, 42910 Pihlajavesi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Pomarkun kotiseutumuseo",
@@ -2812,7 +1723,8 @@
     "city": "Pomarkku",
     "address": " Koulutie 2,  29630 Pomarkku",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Pornaisten seurakunnan museo",
@@ -2820,7 +1732,8 @@
     "city": "Pornainen",
     "address": " Kirkkotie 138, 07170 Pornainen",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "P\u00e4iv\u00e4lehden museo",
@@ -2828,7 +1741,8 @@
     "city": "Helsinki",
     "address": " Ludviginkatu 2-4, 00130 Helsinki",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Ranuan pappila- ja pit\u00e4j\u00e4museo",
@@ -2836,84 +1750,49 @@
     "city": "Ranua",
     "address": " Pappilantie 11, 97700 Ranua",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Riihimuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21633",
     "city": "Sein\u00e4joki",
     "address": " Kannontie, 61100 Per\u00e4sein\u00e4joki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
-    "services": []
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
+    "services": [],
+    "themes": []
   },
   {
     "name": "Ronttism\u00e4en tehtaalaismuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21051",
     "city": "Forssa",
     "address": " II linja 5-7, 30100 Forssa",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot",
+      "K\u00e4sity\u00f6",
+      "Lapsille",
+      "Linnat ja ulkomuseot"
     ]
   },
   {
@@ -2922,47 +1801,31 @@
     "city": "Raasepori",
     "address": " V\u00e4stra Nylandssukhus/L\u00e4nsi-Uudenmaan sairaalamuseo, \u00d6stra Strandgatan 9/ It\u00e4inen Rantakatu 9",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Salon historiallinen museo SAMU",
     "link": "https://museot.fi/museohaku/index.php?museo_id=9005",
     "city": "Salo",
     "address": " Salorankatu 5-7, 24240 Salo",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-15:00"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-15:00",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
+      "Invapys\u00e4k\u00f6inti",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Tiede ja tekniikka"
     ]
   },
   {
@@ -2971,7 +1834,8 @@
     "city": "Sievi",
     "address": " Haikolantie 44, 85410 Sievi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Sodankyl\u00e4n kotiseutumuseo",
@@ -2979,97 +1843,51 @@
     "city": "Sodankyl\u00e4",
     "address": " Hampput\u00f6rm\u00e4ntie 20, 99601 Sodankyl\u00e4",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Str\u00f6mforsin pajamuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21733",
     "city": "Loviisa",
     "address": " Ruukintie 11 A, 07970 Ruotsinpyht\u00e4\u00e4",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Ti",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Ke",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "11:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "11:00-17:00",
+      "tuesday": "11:00-17:00",
+      "wednesday": "11:00-17:00",
+      "thursday": "11:00-17:00",
+      "friday": "11:00-17:00",
+      "saturday": "11:00-17:00",
+      "sunday": "11:00-17:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      },
-      {
-        "service": "Ravintola"
-      }
-    ]
+      "Kahvila",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka",
+      "Ravintola"
+    ],
+    "themes": []
   },
   {
     "name": "Suomusj\u00e4rven kotiseutumuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21794",
     "city": "Salo",
     "address": " Karjalohjantie 161-2, 25410 Suomusj\u00e4rvi",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "11:00-14:00"
-      },
-      {
-        "day": "Su",
-        "open": "11:00-14:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "11:00-14:00",
+      "sunday": "11:00-14:00"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Historia",
+      "Kotimuseot ja talomuseot"
     ]
   },
   {
@@ -3077,40 +1895,21 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=22165",
     "city": "Nurmij\u00e4rvi",
     "address": " Koulunkulmantie 34, 01940 Palojoki ",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": [
+      "Kotimuseot ja talomuseot",
+      "K\u00e4sity\u00f6"
     ]
   },
   {
@@ -3118,47 +1917,25 @@
     "link": "https://museot.fi/museohaku/index.php?museo_id=9069",
     "city": "Laukaa",
     "address": " J\u00e4rvilinnantie 213, 41330 ",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "To",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "Pe",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "La",
-        "open": "12:00-17:00"
-      },
-      {
-        "day": "Su",
-        "open": "12:00-17:00"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "12:00-17:00",
+      "thursday": "12:00-17:00",
+      "friday": "12:00-17:00",
+      "saturday": "12:00-17:00",
+      "sunday": "12:00-17:00"
+    },
     "services": [
-      {
-        "service": "Kahvila"
-      },
-      {
-        "service": "Myyntipiste"
-      },
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
-    ]
+      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista: Alakertaan",
+      "Esteet\u00f6n wc",
+      "Invapys\u00e4k\u00f6inti",
+      "Tilattavissa opastuksia erityisryhmille",
+      "Kahvila",
+      "Myyntipiste",
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": []
   },
   {
     "name": "Taivalkosken kotiseutumuseo",
@@ -3166,7 +1943,8 @@
     "city": "Taivalkoski",
     "address": " Rantatie 3, 93400 Taivalkoski",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Tenholan kotiseutumuseo",
@@ -3174,7 +1952,8 @@
     "city": "Raasepori",
     "address": " Pit\u00e4j\u00e4ntie 7, 10520 Tenhola",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Tervaj\u00e4rven talomuseo",
@@ -3182,48 +1961,27 @@
     "city": "Sotkamo",
     "address": " Tervaj\u00e4rventie 16, 88600 Sotkamo",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Tullimuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21154",
     "city": "Helsinki",
     "address": " Susisaari, Suomenlinna B 20 D, 00190 Helsinki",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "12:30-17:30"
-      },
-      {
-        "day": "Ke",
-        "open": "12:30-17:30"
-      },
-      {
-        "day": "To",
-        "open": "12:30-17:30"
-      },
-      {
-        "day": "Pe",
-        "open": "12:30-17:30"
-      },
-      {
-        "day": "La",
-        "open": "12:30-17:30"
-      },
-      {
-        "day": "Su",
-        "open": "12:30-17:30"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "12:30-17:30",
+      "wednesday": "12:30-17:30",
+      "thursday": "12:30-17:30",
+      "friday": "12:30-17:30",
+      "saturday": "12:30-17:30",
+      "sunday": "12:30-17:30"
+    },
     "services": [
-      {
-        "service": "Myyntipiste"
-      }
-    ]
+      "Myyntipiste"
+    ],
+    "themes": []
   },
   {
     "name": "Turun vesilaitosmuseo",
@@ -3231,7 +1989,8 @@
     "city": "Turku",
     "address": " Halistentie 4, 20540 Turku ",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Valmarin museo",
@@ -3239,7 +1998,8 @@
     "city": "Keminmaa",
     "address": " Jokisuuntie 79, 94450 Keminmaa",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Vampulan kotiseutumuseo",
@@ -3247,7 +2007,8 @@
     "city": "Huittinen",
     "address": " Soinilantie 22, 32610 Vampula",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Varistaipaleen kanavamuseo",
@@ -3255,7 +2016,8 @@
     "city": "Hein\u00e4vesi",
     "address": " V\u00e4yl\u00e4asemantie 2 A Varistaipale",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Virtasalmen kotiseutumuseo",
@@ -3263,48 +2025,27 @@
     "city": "Pieks\u00e4m\u00e4ki",
     "address": " 77330 Virtasalmi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Ylih\u00e4rm\u00e4n kotiseutumuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21961",
     "city": "Kauhava",
     "address": " Rannanj\u00e4rventie 16, 62375 Kauhava",
-    "hours": [
-      {
-        "day": "Ma",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ti",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Ke",
-        "open": "Suljettu"
-      },
-      {
-        "day": "To",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Pe",
-        "open": "Suljettu"
-      },
-      {
-        "day": "La",
-        "open": "Suljettu"
-      },
-      {
-        "day": "Su",
-        "open": "Suljettu"
-      }
-    ],
+    "hours": {
+      "monday": "Suljettu",
+      "tuesday": "Suljettu",
+      "wednesday": "Suljettu",
+      "thursday": "Suljettu",
+      "friday": "Suljettu",
+      "saturday": "Suljettu",
+      "sunday": "Suljettu"
+    },
     "services": [
-      {
-        "service": "Pys\u00e4k\u00f6intipaikka"
-      }
-    ]
+      "Pys\u00e4k\u00f6intipaikka"
+    ],
+    "themes": []
   },
   {
     "name": "Yl\u00f6j\u00e4rven kotiseutumuseo",
@@ -3312,7 +2053,8 @@
     "city": "Yl\u00f6j\u00e4rvi",
     "address": " Hietastentie 4, 33480 Yl\u00f6j\u00e4rvi",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   },
   {
     "name": "Yrj\u00f6 A. J\u00e4ntin taidekokoelma",
@@ -3320,6 +2062,7 @@
     "city": "Porvoo",
     "address": " L\u00e4ntinen Aleksanterinkatu 1, 06100 Porvoo",
     "hours": {},
-    "services": []
+    "services": [],
+    "themes": []
   }
 ]
