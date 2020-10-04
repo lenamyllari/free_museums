@@ -1,11 +1,8 @@
 import Form from "@rjsf/core";
 import React, { useState }  from 'react'
-const mongoose = require('mongoose')
-const url =
-    `mongodb+srv://api_kurssi:Metropolia1@museums.fyo0p.mongodb.net/FreeMuseums?retryWrites=true&w=majority`
 
-//mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 const schema = {
     title: "New museum",
     type: "object",
@@ -65,7 +62,7 @@ const schema = {
 //const log = (type) => console.log.bind(console, type);
 
 const MuseumForm = () => {
-    //const [formData, setFormData] = React.useState(null);
+
     const onSubmit = ({formData}, e) => {
         console.log("Data submitted: ",  formData)
         var request = require('request');
@@ -92,9 +89,11 @@ const MuseumForm = () => {
         <Form schema={schema}
               onChange={log("changed")}
               onSubmit={onSubmit}
+
         >
 
         </Form>
     )
 }
 export default MuseumForm
+

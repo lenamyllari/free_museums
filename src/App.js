@@ -25,12 +25,10 @@ const App = () =>{
           <Switch>
             <Route exact path="/">
               <Search />
-              <div>
-                <MuseumList></MuseumList>
-              </div>
+
             </Route>
             <Route path="/add">
-              <Add />
+              <Add classname="myform"/>
             </Route>
           </Switch>
         </Router>

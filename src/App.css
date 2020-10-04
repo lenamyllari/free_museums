@@ -38,13 +38,17 @@
 }
 
 .mystyle {
-    display: flex;
-    flex-direction: column;
-  background-color: dodgerblue;
-  color: white;
+
   padding: 40px;
   font-family: Arial;
   text-align: center;
 }
 
+.myform{
+  width: 50%;
+  background-color: dodgerblue;
+}
 
+.museumList{
+  list-style-type: none;
+}
