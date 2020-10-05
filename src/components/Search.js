@@ -6,7 +6,6 @@ import serviceOptions from '../data/serviceOptions'
 
 const axios = require('axios');
 
-
 export default class Search  extends Component {
 
         state = {
@@ -19,20 +18,22 @@ export default class Search  extends Component {
             selectedServiceOption: null,
         }
 
-
     renderList =(event) => {
-        var chosenMuseums = []
-        this.setState({isLoaded: false})
-        this.setState({museums: []})
-        if (this.state.searchParameter === "City") {
-            for(var i=0; i<this.state.allMuseums.length; i++) {
-                if(this.state.allMuseums[i].city == this.state.searchWord){
-                    chosenMuseums.push(this.state.allMuseums[i])
-                }
-                this.setState({museums: chosenMuseums})
-            }
-        };
-        this.setState({isLoaded: true})
+        var uri = "http://localhost:3001/api/museums/" + this.state.searchParameter.toLowerCase() + "/?" +
+                    this.state.searchParameter.toLowerCase() + "="+this.state.searchWord;
+        axios
+            .get(uri)
+            .then(res => {
+                console.log(res)
+                this.setState({
+                    isLoaded: true,
+                    museums: res.data,
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
+
     }
 
     themeSelect =(e) =>{
