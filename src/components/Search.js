@@ -36,7 +36,20 @@ export default class Search  extends Component {
     }
 
     themeSelect =(e) =>{
-            console.log(e)
+            console.log(this.state.selectedThemeOption)
+        var uri = "http://localhost:3001/api/museums/themes/?theme="+this.state.selectedThemeOption.value;
+        axios
+            .get(uri)
+            .then(res => {
+                console.log(res)
+                this.setState({
+                    isLoaded: true,
+                    museums: res.data,
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
     };
     handleThemeSelect= selectedThemeOption => {
         this.setState({
