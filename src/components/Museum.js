@@ -25,8 +25,10 @@ const Museum = ({ museum }) => {
         <li><h3>{museum.name}</h3>
             <b>Address: </b>{museum.address},
             <p><b>WWW:</b> <a href={museum.link}>{museum.link}</a></p>
+            {(museum.hours || museum.services.length>0 || museum.themes.length>0) && <div>
             <a className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h3>{linkName}</h3></a>
             {readMore && details}
+            </div>}
         </li>
     )
 }
