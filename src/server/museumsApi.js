@@ -16,7 +16,7 @@ const isStringEmpty = (input) => {
     return !input || !input.trim();
 }
 
-MongoClient.connect(dbConnectionUrl, function (err, dbInstance) {
+/*MongoClient.connect(dbConnectionUrl, function (err, dbInstance) {
     if (err) {
         console.log(`[MongoDB connection] ERROR: ${err}`);
     } else {
@@ -28,31 +28,23 @@ MongoClient.connect(dbConnectionUrl, function (err, dbInstance) {
             //console.log(result);
         });
     }
-})
-
-/*db.initialize(dbName, collectionName, function (dbCollection) { // successCallback
-    // get all items
-    dbCollection.find().toArray(function (err, result) {
-        if (err) throw err;
-        console.log(result);
-        // << return response to client >>
-    });
-}, function (err) { // failureCallback
-    throw (err);
-});*/
+})*/
 
 router.get('/museums', (req, res) => {
     console.log("api")
     const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
-    client.connect(err => {
+    client.connect(async err => {
+        console.log("connect")
         const collection = client.db(dbName).collection(collectionName);
-        collection.find().toArray(function (err, result) {
+        console.log("connect")
+        await collection.find().toArray(function (err, result) {
             if (err) throw err;
             console.log(result);
             res.send(result)
         });
-        client.close();
+
     });
+    client.close();
 })
 
 router.get('/museums/themes', (req, res) => {
