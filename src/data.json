@@ -416,71 +416,8 @@
       "Taide"
     ]
   },
-  {
-    "name": "Riuttalan talonpoikaismuseo",
-    "link": "https://museot.fi/museohaku/index.php?museo_id=21293",
-    "city": "Karttula",
-    "address": " Riuttalantie 719, 72100 Karttula",
-    "hours": {
-      "monday": "Suljettu",
-      "tuesday": "Suljettu",
-      "wednesday": "Suljettu",
-      "thursday": "Suljettu",
-      "friday": "12:00-17:00",
-      "saturday": "12:00-17:00",
-      "sunday": "12:00-17:00"
-    },
-    "services": [
-      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista: Kahvila-Ravintola Katrin Kammarj\u00edin",
-      "Esteet\u00f6n wc",
-      "Istumapaikkoja n\u00e4yttelytiloissa",
-      "Kahvila",
-      "Kokoushuone",
-      "Lastenhoitotila",
-      "Leikkitila/tila perheille",
-      "Museokauppa",
-      "Pys\u00e4k\u00f6intipaikka",
-      "Ravintola",
-      "Tila omien ev\u00e4iden sy\u00f6nnille"
-    ],
-    "themes": [
-      "Historia",
-      "Kotimuseot ja talomuseot",
-      "Lapsille",
-      "Luonto ja el\u00e4imet",
-      "Satoja vuosia sitten"
-    ]
-  },
-  {
-    "name": "Salon taidemuseo - Veturitalli",
-    "link": "https://museot.fi/museohaku/index.php?museo_id=21986",
-    "city": "Salo",
-    "address": " Mariankatu 14, 24240 Salo",
-    "hours": {
-      "monday": "Suljettu",
-      "tuesday": "Suljettu",
-      "wednesday": "Suljettu",
-      "thursday": "Suljettu",
-      "friday": "Suljettu",
-      "saturday": "Suljettu",
-      "sunday": "Suljettu"
-    },
-    "services": [
-      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
-      "Esteet\u00f6n wc",
-      "Invapys\u00e4k\u00f6inti",
-      "Tilattavissa opastuksia erityisryhmille",
-      "Museokauppa",
-      "Myyntipiste",
-      "Pys\u00e4k\u00f6intipaikka"
-    ],
-    "themes": [
-      "Kansainv\u00e4list\u00e4",
-      "Nykytaide",
-      "Taide",
-      "Valokuva"
-    ]
-  },
+
+
   {
     "name": "Suomen Pankin rahamuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=22058",
@@ -1024,15 +961,7 @@
     "services": [],
     "themes": []
   },
-  {
-    "name": "Kaarteen sotamuseo",
-    "link": "https://museot.fi/museohaku/index.php?museo_id=9153",
-    "city": "-",
-    "address": " Rakettikaari 30 ",
-    "hours": {},
-    "services": [],
-    "themes": []
-  },
+
   {
     "name": "Kallion kotiseututalo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=22041",
@@ -1653,30 +1582,6 @@
     "themes": []
   },
   {
-    "name": "Panssarimuseo",
-    "link": "https://museot.fi/museohaku/index.php?museo_id=21073",
-    "city": "Hattula",
-    "address": " Hattulantie 334, 13700 Parolannummi",
-    "hours": {
-      "monday": "10:00-15:00",
-      "tuesday": "10:00-15:00",
-      "wednesday": "10:00-15:00",
-      "thursday": "10:00-15:00",
-      "friday": "10:00-15:00",
-      "saturday": "10:00-15:00",
-      "sunday": "10:00-15:00"
-    },
-    "services": [
-      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy osaan tiloista",
-      "Esteet\u00f6n wc",
-      "Kosketeltavia esineit\u00e4",
-      "Kahvila",
-      "Myyntipiste",
-      "Pys\u00e4k\u00f6intipaikka"
-    ],
-    "themes": []
-  },
-  {
     "name": "Parikkalan kotiseutumuseo Hauta-Ollin m\u00f6kki ja meijerimuseo",
     "link": "https://museot.fi/museohaku/index.php?museo_id=21615",
     "city": "Parikkala",
@@ -1803,30 +1708,6 @@
     "hours": {},
     "services": [],
     "themes": []
-  },
-  {
-    "name": "Salon historiallinen museo SAMU",
-    "link": "https://museot.fi/museohaku/index.php?museo_id=9005",
-    "city": "Salo",
-    "address": " Salorankatu 5-7, 24240 Salo",
-    "hours": {
-      "monday": "Suljettu",
-      "tuesday": "Suljettu",
-      "wednesday": "Suljettu",
-      "thursday": "11:00-17:00",
-      "friday": "11:00-17:00",
-      "saturday": "11:00-15:00",
-      "sunday": "Suljettu"
-    },
-    "services": [
-      "Esteet\u00f6n sis\u00e4\u00e4np\u00e4\u00e4sy",
-      "Invapys\u00e4k\u00f6inti",
-      "Tilattavissa opastuksia erityisryhmille",
-      "Pys\u00e4k\u00f6intipaikka"
-    ],
-    "themes": [
-      "Tiede ja tekniikka"
-    ]
   },
   {
     "name": "Sievin kotiseutumuseo",
