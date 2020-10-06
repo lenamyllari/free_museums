@@ -111,6 +111,50 @@ router.get('/museums/name', (req, res) => {
     }
 })
 
+router.get('/museums/services', (req, res) => {
+    var q = url.parse(req.url, true).query;
+    var service = q.service;
+    if (isStringEmpty(service)) {
+        res.send("empty search")
+    } else {
+        const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
+        client.connect(err => {
+            const collection = client.db(dbName).collection(collectionName);
+            collection.find({"services": service}).toArray(function (err, result) {
+                if (err) {
+                    return result.status(500).send(err);
+                }
+                console.log(result);
+                res.send(result)
+            });
+            client.close();
+        });
+    }
+})
+
+router.get('/museums/hours', (req, res) => {
+    var q = url.parse(req.url, true).query;
+    var weekday = q.weekday;
+    var day = weekday.toLowerCase();
+    console.log(day);
+    if (isStringEmpty(weekday)) {
+        res.send("empty search")
+    } else {
+        const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
+        client.connect(err => {
+            const collection = client.db(dbName).collection(collectionName);
+            collection.find({"hours.tuesday": "Suljettu"}).toArray(function (err, result) {
+                if (err) {
+                    return result.status(500).send(err);
+                }
+                console.log(result);
+                res.send(result)
+            });
+            client.close();
+        });
+    }
+})
+
 router.post('/addMuseum', (req, res) =>{
     console.log(req.body);      // your JSON
     const museo = getMuseum(req);
