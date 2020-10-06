@@ -103,7 +103,7 @@ export default class Search  extends Component {
                                     <input name="name" onChange={this.onNameChange}/>
                                 </label>
                                 <div onChange={this.onChangeValue}>
-                                    <input type="radio" value="City" name="parameter" /> City
+                                    <input type="radio" value="City" name="parameter" defaultChecked /> City
                                     <input type="radio" value="Name" name="parameter" /> Name
                                 </div>
                                 <button type="submit" onClick={this.renderList}>Search</button>
@@ -133,7 +133,8 @@ export default class Search  extends Component {
                 </div>
 
                 <div>
-                   {this.state.isLoaded && <MuseumList museums={this.state.museums}></MuseumList>}
+                   {this.state.isLoaded && this.state.museums.length>0 && <MuseumList museums={this.state.museums}></MuseumList>}
+                    {this.state.museums.length==0 && <p>Nothing to display</p>}
                 </div>
             </div>
         )

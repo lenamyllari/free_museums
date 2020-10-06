@@ -12,7 +12,8 @@ import './App.css'
 
 const App = () =>{
   const padding = {
-    padding: 5
+    padding: 20,
+    fontSize: 50,
   };
 
   return (
