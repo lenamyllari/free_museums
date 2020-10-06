@@ -76,7 +76,9 @@ router.get('/museums/city', (req, res) => {
     var q = url.parse(req.url, true).query;
     var city = q.city;
     if (isStringEmpty(city)) {
-        return res.send(createError(400));
+        res.statusCode=400
+        res.end()
+       // return res.send(createError(400));
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {

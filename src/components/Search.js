@@ -17,6 +17,7 @@ export default class Search  extends Component {
             searchParameter: "City",
             selectedThemeOption: null,
             selectedServiceOption: null,
+            error: ""
         }
 
     renderList =(event) => {
@@ -25,12 +26,15 @@ export default class Search  extends Component {
         axios
             .get(uri)
             .then(res => {
+                console.log(res)
                 this.setState({
                     isLoaded: true,
                     museums: res.data,
                 });
             })
             .catch(err => {
+                this.setState({isLoaded: false})
+                this.setState({error: err.message})
                 console.log(err);
             });
 
@@ -174,6 +178,7 @@ export default class Search  extends Component {
                 </div>
 
                 <div>
+                    {!this.state.isLoaded && <p>{this.state.error}</p>}
                    {this.state.isLoaded && this.state.museums.length>0 && <MuseumList museums={this.state.museums}></MuseumList>}
                     {this.state.museums.length==0 && <p>Nothing to display</p>}
                 </div>
