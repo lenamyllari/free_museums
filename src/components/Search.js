@@ -3,6 +3,7 @@ import MuseumList from './MuseumsList'
 import Select from 'react-select';
 import themeOptions from '../data/themeOptions'
 import serviceOptions from '../data/serviceOptions'
+import weekdayOptions from '../data/weekdayOptions'
 
 const axios = require('axios');
 
@@ -24,7 +25,6 @@ export default class Search  extends Component {
         axios
             .get(uri)
             .then(res => {
-                console.log(res)
                 this.setState({
                     isLoaded: true,
                     museums: res.data,
@@ -42,7 +42,6 @@ export default class Search  extends Component {
         axios
             .get(uri)
             .then(res => {
-                console.log(res)
                 this.setState({
                     isLoaded: true,
                     museums: res.data,
@@ -56,27 +55,58 @@ export default class Search  extends Component {
         this.setState({
             selectedThemeOption: selectedThemeOption ,
         });
-        console.log(`Option selected:`, selectedThemeOption);
     };
 
     handleServiceSelect= selectedServiceOption => {
         this.setState({
             selectedServiceOption: selectedServiceOption ,
         });
-        console.log(`Option selected:`, selectedServiceOption);
     };
-    serviceSelect =(e) =>{
-        console.log(e)
-    };;
 
+    serviceSelect=(e) =>{
+        var uri = "http://localhost:3001/api/museums/services/?service="+this.state.selectedServiceOption.value;
+        axios
+            .get(uri)
+            .then(res => {
+                this.setState({
+                    isLoaded: true,
+                    museums: res.data,
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    };
 
-    componentDidMount(){
-        console.log(this)
-        var uri = "http://localhost:3001/api/museums";
+    weekdaySelect=(e) =>{
+        var uri = "http://localhost:3001/api/museums/hours/?weekday="+this.state.selectedWeekdayOption.value;
         axios
             .get(uri)
             .then(res => {
                 console.log(res)
+                this.setState({
+                    isLoaded: true,
+                    museums: res.data,
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    };
+
+    handleWeekdaySelect= selectedWeekdayOption => {
+        this.setState({
+            selectedWeekdayOption: selectedWeekdayOption ,
+        });
+    };
+
+
+
+    componentDidMount(){
+        var uri = "http://localhost:3001/api/museums";
+        axios
+            .get(uri)
+            .then(res => {
                 this.setState({
                     isLoaded: true,
                     allMuseums: res.data,
@@ -92,6 +122,7 @@ export default class Search  extends Component {
     render() {
         const { selectedThemeOption } = this.state;
         const { selectedServiceOption } = this.state;
+        const { selectedWeekdayOption } = this.state;
         return (
             <div>
                 <div className="container">
@@ -127,6 +158,16 @@ export default class Search  extends Component {
                                 options={serviceOptions}
                             />
                             <button type="submit" onClick={this.serviceSelect}>Search</button>
+
+                        </div>
+                        <div className="col-sm">
+                            <h3>Search by weekday</h3>
+                            <Select
+                                value={this.selectedWeekdayOption}
+                                onChange={this.handleWeekdaySelect}
+                                options={weekdayOptions}
+                            />
+                            <button type="submit" onClick={this.weekdaySelect}>Search</button>
 
                         </div>
                     </div>
