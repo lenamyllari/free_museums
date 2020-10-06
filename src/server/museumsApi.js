@@ -11,6 +11,7 @@ const dbConnectionUrl = process.env.MONGODB_URI
 const mongoose = require('mongoose')
 const { Schema } = mongoose;
 const url = require('url');
+const createError = require("http-errors");
 
 const isStringEmpty = (input) => {
     return !input || !input.trim();
@@ -40,7 +41,7 @@ router.get('/museums', (req, res) => {
         await collection.find().toArray(function (err, result) {
             if (err) throw err;
             console.log(result);
-            res.send(result)
+            res.status(200).send(result)
         });
 
     });
@@ -51,7 +52,7 @@ router.get('/museums/themes', (req, res) => {
     var q = url.parse(req.url, true).query;
     var theme = q.theme
     if (isStringEmpty(theme)) {
-        res.send("empty search")
+        return res.send(createError(400));
     }
     else {
         const client = new MongoClient(dbConnectionUrl, {useNewUrlParser: true});
@@ -60,9 +61,11 @@ router.get('/museums/themes', (req, res) => {
             collection.find({"themes": q.theme}).toArray(function (err, result) {
                 if (err) {
                     return result.status(500).send(err);
+                } else if (result.length === 0) {
+                    return res.send(createError(404));
                 }
                 console.log(result);
-                res.send(result)
+                res.status(200).send(result)
             });
             client.close();
         });
@@ -73,7 +76,7 @@ router.get('/museums/city', (req, res) => {
     var q = url.parse(req.url, true).query;
     var city = q.city;
     if (isStringEmpty(city)) {
-        res.send("empty search")
+        return res.send(createError(400));
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {
@@ -81,9 +84,11 @@ router.get('/museums/city', (req, res) => {
             collection.find({city: city}).toArray(function (err, result) {
                 if (err) {
                     return result.status(500).send(err);
+                } else if (result.length === 0) {
+                    return res.send(createError(404));
                 }
                 console.log(result);
-                res.send(result)
+                res.status(200).send(result)
             });
             client.close();
         });
@@ -94,7 +99,7 @@ router.get('/museums/name', (req, res) => {
     var q = url.parse(req.url, true).query;
     var name = q.name;
     if (isStringEmpty(name)) {
-        res.send("empty search")
+        return res.send(createError(400));
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {
@@ -102,9 +107,11 @@ router.get('/museums/name', (req, res) => {
             collection.find({name: name}).toArray(function (err, result) {
                 if (err) {
                     return result.status(500).send(err);
+                } else if (result.length === 0) {
+                    return res.send(createError(404));
                 }
                 console.log(result);
-                res.send(result)
+                res.status(200).send(result)
             });
             client.close();
         });
@@ -115,7 +122,7 @@ router.get('/museums/services', (req, res) => {
     var q = url.parse(req.url, true).query;
     var service = q.service;
     if (isStringEmpty(service)) {
-        res.send("empty search")
+        return res.send(createError(400));
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {
@@ -123,9 +130,11 @@ router.get('/museums/services', (req, res) => {
             collection.find({"services": service}).toArray(function (err, result) {
                 if (err) {
                     return result.status(500).send(err);
+                } else if (result.length === 0) {
+                    return res.send(createError(404));
                 }
                 console.log(result);
-                res.send(result)
+                res.status(200).send(result);
             });
             client.close();
         });
@@ -134,12 +143,11 @@ router.get('/museums/services', (req, res) => {
 
 router.get('/museums/hours', (req, res) => {
     var q = url.parse(req.url, true).query;
-    var weekday = q.weekday;
-    var day = weekday.toLowerCase();
+    var day = (q.weekday).toLowerCase();
     console.log(day);
     const qString = 'hours.' + day
-    if (isStringEmpty(weekday)) {
-        res.send("empty search")
+    if (isStringEmpty(day)) {
+        return res.send(createError(400));
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(async err => {
@@ -147,9 +155,11 @@ router.get('/museums/hours', (req, res) => {
             await collection.find({$and: [{"hours": {$ne: null}},{[qString]: {$ne: "Suljettu"}}]}).toArray(function (err, result) {
                 if (err) {
                     throw err;
+                } else if (result.length === 0) {
+                    return res.send(createError(404));
                 }
-              //  console.log(result);
-                res.send(result)
+              //console.log(result);
+                res.status(200).send(result)
             });
             client.close();
         });
@@ -165,13 +175,13 @@ router.post('/addMuseum', (req, res) =>{
         const collection = client.db(dbName).collection(collectionName);
         collection.insertOne(museo, function (err, result) {
             if (err) throw err;
-            res.send(result)
+            res.status(201).send(result)
         });
         client.close();
     });
 })
 
-router.post('/update', (req, res) => {
+router.post('/museums/update', (req, res) => {
     console.log(req.body);      // your JSON
     const museo = getMuseum(req);
     console.log(museo)
@@ -186,12 +196,13 @@ router.post('/update', (req, res) => {
     });
 })
 
-router.delete('/delete', (req, res) => {
-    const museo = getMuseum(req);
+router.delete('/museums/delete', (req, res) => {
+    var q = url.parse(req.url, true).query;
+    var name = q.name;
     const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
     client.connect(err => {
         const collection = client.db(dbName).collection(collectionName);
-        collection.find({name: museo.name}).deleteOne(museo, function (err, result) {
+        collection.deleteOne({name: name}, function (err, result) {
             if (err) throw err;
             res.send(result)
         });
