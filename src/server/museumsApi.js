@@ -137,17 +137,18 @@ router.get('/museums/hours', (req, res) => {
     var weekday = q.weekday;
     var day = weekday.toLowerCase();
     console.log(day);
+    const qString = 'hours.' + day
     if (isStringEmpty(weekday)) {
         res.send("empty search")
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
-        client.connect(err => {
+        client.connect(async err => {
             const collection = client.db(dbName).collection(collectionName);
-            collection.find({"hours.tuesday": "Suljettu"}).toArray(function (err, result) {
+            await collection.find({$and: [{"hours": {$ne: null}},{[qString]: {$ne: "Suljettu"}}]}).toArray(function (err, result) {
                 if (err) {
-                    return result.status(500).send(err);
+                    throw err;
                 }
-                console.log(result);
+              //  console.log(result);
                 res.send(result)
             });
             client.close();

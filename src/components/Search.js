@@ -14,7 +14,7 @@ export default class Search  extends Component {
             museums: [],
             isLoaded: false,
             searchWord: "",
-            searchParameter: "",
+            searchParameter: "City",
             selectedThemeOption: null,
             selectedServiceOption: null,
         }
