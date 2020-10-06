@@ -1,6 +1,6 @@
 
 const weekdayOptions = [
-    { value: "Monday", label: "Design ja arkMonday"},
+    { value: "Monday", label: "Monday"},
     { value: "Tuesday", label: "Tuesday"},
     { value: "Wednesday", label: "Wednesday"},
     { value: "Thursday", label: "Thursday"},
