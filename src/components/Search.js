@@ -36,6 +36,7 @@ export default class Search  extends Component {
                 this.setState({
                     isLoaded: true,
                     museums: res.data,
+                    searchWord: ""
                 });
             })
             .catch(err => {
@@ -61,6 +62,7 @@ export default class Search  extends Component {
                     this.setState({
                         isLoaded: true,
                         museums: res.data,
+                        selectedThemeOption: null
                     });
                 })
                 .catch(err => {
@@ -94,6 +96,7 @@ export default class Search  extends Component {
                     this.setState({
                         isLoaded: true,
                         museums: res.data,
+                        selectedServiceOption: null
                     });
                 })
                 .catch(err => {
@@ -117,7 +120,8 @@ export default class Search  extends Component {
                     this.setState({
                         isLoaded: true,
                         museums: res.data,
-                    });
+                        selectedWeekdayOption: null
+                    }, ()=> console.log(this.state.selectedWeekdayOption));
                 })
                 .catch(err => {
                     console.log(err);
@@ -162,7 +166,7 @@ export default class Search  extends Component {
                             <h3>Search by name or city</h3>
                             <form onSubmit={e => e.preventDefault()}>
                                 <label>Name
-                                    <input name="name" onChange={this.onNameChange}/>
+                                    <input name="name" onChange={this.onNameChange} value={this.state.searchWord}/>
                                 </label>
                                 <div onChange={this.onChangeValue}>
                                     <input type="radio" value="City" name="parameter" defaultChecked /> City
@@ -197,7 +201,7 @@ export default class Search  extends Component {
                             <h3>Search by weekday</h3>
                             {this.state.weekdayOptionMissing && <p className="error">Select a weekday first</p> }
                             <Select
-                                value={this.selectedWeekdayOption}
+                                value={selectedWeekdayOption}
                                 onChange={this.handleWeekdaySelect}
                                 options={weekdayOptions}
                             />
