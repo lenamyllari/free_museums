@@ -39,11 +39,14 @@ router.get('/museums', (req, res) => {
         const collection = client.db(dbName).collection(collectionName);
         console.log("connect")
         await collection.find().toArray(function (err, result) {
-            if (err) throw err;
-            console.log(result);
-            res.status(200).send(result)
+            if (err) {
+                res.statusCode=500;
+                res.end();
+            } else {
+                console.log(result);
+                res.status(200).send(result)
+            }
         });
-
     });
     client.close();
 })
@@ -52,7 +55,8 @@ router.get('/museums/themes', (req, res) => {
     var q = url.parse(req.url, true).query;
     var theme = q.theme
     if (isStringEmpty(theme)) {
-        return res.send(createError(400));
+        res.statusCode=400;
+        res.end();
     }
     else {
         const client = new MongoClient(dbConnectionUrl, {useNewUrlParser: true});
@@ -60,12 +64,15 @@ router.get('/museums/themes', (req, res) => {
             const collection = client.db(dbName).collection(collectionName);
             collection.find({"themes": q.theme}).toArray(function (err, result) {
                 if (err) {
-                    return result.status(500).send(err);
+                    res.statusCode=500;
+                    res.end();
                 } else if (result.length === 0) {
-                    return res.send(createError(404));
+                    res.statusCode=404;
+                    res.end();
+                } else {
+                    console.log(result);
+                    res.status(200).send(result);
                 }
-                console.log(result);
-                res.status(200).send(result)
             });
             client.close();
         });
@@ -76,8 +83,8 @@ router.get('/museums/city', (req, res) => {
     var q = url.parse(req.url, true).query;
     var city = q.city;
     if (isStringEmpty(city)) {
-        res.statusCode=400
-        res.end()
+        res.statusCode=400;
+        res.end();
        // return res.send(createError(400));
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
@@ -85,12 +92,15 @@ router.get('/museums/city', (req, res) => {
             const collection = client.db(dbName).collection(collectionName);
             collection.find({city: city}).toArray(function (err, result) {
                 if (err) {
-                    return result.status(500).send(err);
+                    res.statusCode=500;
+                    res.end();
                 } else if (result.length === 0) {
-                    return res.send(createError(404));
+                    res.statusCode=404;
+                    res.end();
+                } else {
+                    console.log(result);
+                    res.status(200).send(result)
                 }
-                console.log(result);
-                res.status(200).send(result)
             });
             client.close();
         });
@@ -101,19 +111,23 @@ router.get('/museums/name', (req, res) => {
     var q = url.parse(req.url, true).query;
     var name = q.name;
     if (isStringEmpty(name)) {
-        return res.send(createError(400));
+        res.statusCode=400;
+        res.end();
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {
             const collection = client.db(dbName).collection(collectionName);
             collection.find({name: name}).toArray(function (err, result) {
                 if (err) {
-                    return result.status(500).send(err);
+                    res.statusCode=500;
+                    res.end();
                 } else if (result.length === 0) {
-                    return res.send(createError(404));
+                    res.statusCode=404;
+                    res.end();
+                } else {
+                    console.log(result);
+                    res.status(200).send(result);
                 }
-                console.log(result);
-                res.status(200).send(result)
             });
             client.close();
         });
@@ -124,19 +138,23 @@ router.get('/museums/services', (req, res) => {
     var q = url.parse(req.url, true).query;
     var service = q.service;
     if (isStringEmpty(service)) {
-        return res.send(createError(400));
+        res.statusCode=400;
+        res.end();
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {
             const collection = client.db(dbName).collection(collectionName);
             collection.find({"services": service}).toArray(function (err, result) {
                 if (err) {
-                    return result.status(500).send(err);
+                    res.statusCode=500;
+                    res.end();
                 } else if (result.length === 0) {
-                    return res.send(createError(404));
+                    res.statusCode=404;
+                    res.end();
+                } else {
+                    console.log(result);
+                    res.status(200).send(result);
                 }
-                console.log(result);
-                res.status(200).send(result);
             });
             client.close();
         });
@@ -149,19 +167,22 @@ router.get('/museums/hours', (req, res) => {
     console.log(day);
     const qString = 'hours.' + day
     if (isStringEmpty(day)) {
-        return res.send(createError(400));
+        res.statusCode=400;
+        res.end();
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(async err => {
             const collection = client.db(dbName).collection(collectionName);
             await collection.find({$and: [{"hours": {$ne: null}},{[qString]: {$ne: "Suljettu"}}]}).toArray(function (err, result) {
                 if (err) {
-                    throw err;
+                    res.statusCode=500;
+                    res.end();
                 } else if (result.length === 0) {
-                    return res.send(createError(404));
+                    res.statusCode=404;
+                    res.end();
+                } else {
+                    res.status(200).send(result);
                 }
-              //console.log(result);
-                res.status(200).send(result)
             });
             client.close();
         });
@@ -176,8 +197,12 @@ router.post('/addMuseum', (req, res) =>{
     client.connect(err => {
         const collection = client.db(dbName).collection(collectionName);
         collection.insertOne(museo, function (err, result) {
-            if (err) throw err;
-            res.status(201).send(result)
+            if (err) {
+                res.statusCode=500;
+                res.end();
+            } else {
+                res.status(201).send(result);
+            }
         });
         client.close();
     });
@@ -205,8 +230,11 @@ router.delete('/museums/delete', (req, res) => {
     client.connect(err => {
         const collection = client.db(dbName).collection(collectionName);
         collection.deleteOne({name: name}, function (err, result) {
-            if (err) throw err;
-            res.send(result)
+            if (err) {
+                throw err;
+            } else {
+                res.status(200).send(result);
+            }
         });
         client.close();
     });
