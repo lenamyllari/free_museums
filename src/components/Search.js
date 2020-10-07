@@ -17,8 +17,14 @@ export default class Search  extends Component {
             searchParameter: "City",
             selectedThemeOption: null,
             selectedServiceOption: null,
-            error: ""
+            selectedWeekdayOption: null,
+            error: "",
+            serviceOptionMissing: false,
+            themeOptionMissing: false,
+            weekdayOptionMissing: false
         }
+
+
 
     renderList =(event) => {
         var uri = "http://localhost:3001/api/museums/" + this.state.searchParameter.toLowerCase() + "/?" +
@@ -41,19 +47,26 @@ export default class Search  extends Component {
     }
 
     themeSelect =(e) =>{
+        if(!this.state.selectedThemeOption){
+            this.setState({themeOptionMissing: true})
+            this.setState({museums: []})
+        }
+        else {
             console.log(this.state.selectedThemeOption)
-        var uri = "http://localhost:3001/api/museums/themes/?theme="+this.state.selectedThemeOption.value;
-        axios
-            .get(uri)
-            .then(res => {
-                this.setState({
-                    isLoaded: true,
-                    museums: res.data,
+            this.setState({themeOptionMissing: false})
+            var uri = "http://localhost:3001/api/museums/themes/?theme=" + this.state.selectedThemeOption.value;
+            axios
+                .get(uri)
+                .then(res => {
+                    this.setState({
+                        isLoaded: true,
+                        museums: res.data,
+                    });
+                })
+                .catch(err => {
+                    console.log(err);
                 });
-            })
-            .catch(err => {
-                console.log(err);
-            });
+        }
     };
     handleThemeSelect= selectedThemeOption => {
         this.setState({
@@ -68,34 +81,48 @@ export default class Search  extends Component {
     };
 
     serviceSelect=(e) =>{
-        var uri = "http://localhost:3001/api/museums/services/?service="+this.state.selectedServiceOption.value;
-        axios
-            .get(uri)
-            .then(res => {
-                this.setState({
-                    isLoaded: true,
-                    museums: res.data,
+        if(!this.state.selectedServiceOption){
+            this.setState({serviceOptionMissing: true})
+            this.setState({museums: []})
+        }
+        else {
+            this.setState({serviceOptionMissing: false})
+            var uri = "http://localhost:3001/api/museums/services/?service=" + this.state.selectedServiceOption.value;
+            axios
+                .get(uri)
+                .then(res => {
+                    this.setState({
+                        isLoaded: true,
+                        museums: res.data,
+                    });
+                })
+                .catch(err => {
+                    console.log(err);
                 });
-            })
-            .catch(err => {
-                console.log(err);
-            });
+        }
     };
 
     weekdaySelect=(e) =>{
-        var uri = "http://localhost:3001/api/museums/hours/?weekday="+this.state.selectedWeekdayOption.value;
-        axios
-            .get(uri)
-            .then(res => {
-                console.log(res)
-                this.setState({
-                    isLoaded: true,
-                    museums: res.data,
+        if(!this.state.selectedWeekdayOption){
+            this.setState({weekdayOptionMissing: true})
+            this.setState({museums: []})
+        }
+        else {
+            this.setState({weekdayOptionMissing: false})
+            var uri = "http://localhost:3001/api/museums/hours/?weekday=" + this.state.selectedWeekdayOption.value;
+            axios
+                .get(uri)
+                .then(res => {
+                    console.log(res)
+                    this.setState({
+                        isLoaded: true,
+                        museums: res.data,
+                    });
+                })
+                .catch(err => {
+                    console.log(err);
                 });
-            })
-            .catch(err => {
-                console.log(err);
-            });
+        }
     };
 
     handleWeekdaySelect= selectedWeekdayOption => {
@@ -146,6 +173,7 @@ export default class Search  extends Component {
                         </div>
                         <div className="col-sm">
                             <h3>Search by theme</h3>
+                            {this.state.themeOptionMissing && <p className="error">Select a theme first</p> }
                             <Select
                                 value={selectedThemeOption}
                                 onChange={this.handleThemeSelect}
@@ -156,6 +184,7 @@ export default class Search  extends Component {
                         </div>
                         <div className="col-sm">
                             <h3>Search by service</h3>
+                            {this.state.serviceOptionMissing && <p className="error">Select an option first</p> }
                             <Select
                                 value={selectedServiceOption}
                                 onChange={this.handleServiceSelect}
@@ -166,6 +195,7 @@ export default class Search  extends Component {
                         </div>
                         <div className="col-sm">
                             <h3>Search by weekday</h3>
+                            {this.state.weekdayOptionMissing && <p className="error">Select a weekday first</p> }
                             <Select
                                 value={this.selectedWeekdayOption}
                                 onChange={this.handleWeekdaySelect}

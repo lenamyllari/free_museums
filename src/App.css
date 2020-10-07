@@ -52,3 +52,8 @@
 .museumList{
   list-style-type: none;
 }
+
+.error {
+  color: red;
+  size: 30px;
+}
