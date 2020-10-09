@@ -68,7 +68,7 @@ const MuseumForm = () => {
         var request = require('request');
     console.log(formData)
         var data = {
-            url: "http://localhost:3001/api/addMuseum",
+            url: "http://localhost:3001/api/museums/add",
             json: true,
             headers: {
                 "content-type": "application/json",

@@ -43,7 +43,7 @@ const isWeekday = (input) => {
     }
 })*/
 
-router.get('/museums', (req, res) => {
+router.get('/museums/all', (req, res) => {
     console.log("api")
     const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
     client.connect(async err => {
@@ -201,7 +201,7 @@ router.get('/museums/hours', (req, res) => {
     }
 })
 
-router.post('/addMuseum', (req, res) =>{
+router.post('museums/add', (req, res) =>{
     console.log(req.body);      // your JSON
     const museo = getMuseum(req);
     console.log(museo)

@@ -138,7 +138,7 @@ export default class Search  extends Component {
 
 
     componentDidMount(){
-        var uri = "http://localhost:3001/api/museums";
+        var uri = "http://localhost:3001/api/museums/all";
         axios
             .get(uri)
             .then(res => {

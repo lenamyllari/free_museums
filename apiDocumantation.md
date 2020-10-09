@@ -1,3 +1,8 @@
+**Free museums in Finland: API documentation**
+
+   The Free museums in Finland REST API requires no authentication at the moment.
+   REST API responds to GET and POST and lives at the /api/museums/ endpoint. 
+   
 **Show all museums**
 ----
   Returns json data about all museums.
