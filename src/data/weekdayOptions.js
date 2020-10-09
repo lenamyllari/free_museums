@@ -7,6 +7,6 @@ const weekdayOptions = [
     { value: "Friday", label: "Friday"},
     { value: "Saturday", label: "Saturday"},
     { value: "Sunday", label: "Sunday"},
- ]
+]
 
-export default weekdayOptions
+module.exports = weekdayOptions;

@@ -11,10 +11,22 @@ const dbConnectionUrl = process.env.MONGODB_URI
 const mongoose = require('mongoose')
 const { Schema } = mongoose;
 const url = require('url');
-const createError = require("http-errors");
+const weekdayOptions = require('../data/weekdayOptions.js')
 
 const isStringEmpty = (input) => {
     return !input || !input.trim();
+}
+
+const isWeekday = (input) => {
+    var isWeekday = false;
+    for (var i=0;i<weekdayOptions.length;i++) {
+        if (input === weekdayOptions[i].value.toLowerCase()) {
+            isWeekday = true;
+            break;
+        }
+    }
+    console.log(isWeekday);
+    return isWeekday;
 }
 
 /*MongoClient.connect(dbConnectionUrl, function (err, dbInstance) {
@@ -166,7 +178,7 @@ router.get('/museums/hours', (req, res) => {
     var day = (q.weekday).toLowerCase();
     console.log(day);
     const qString = 'hours.' + day
-    if (isStringEmpty(day)) {
+    if (isStringEmpty(day) || !isWeekday(day)) {
         res.statusCode=400;
         res.end();
     } else {
@@ -208,7 +220,7 @@ router.post('/addMuseum', (req, res) =>{
     });
 })
 
-router.post('/museums/update', (req, res) => {
+router.put('/museums/update', (req, res) => {
     console.log(req.body);      // your JSON
     const museo = getMuseum(req);
     console.log(museo)
@@ -216,8 +228,12 @@ router.post('/museums/update', (req, res) => {
     client.connect(err => {
         const collection = client.db(dbName).collection(collectionName);
         collection.find({name: museo.name}).updateOne(museo, function (err, result) {
-            if (err) throw err;
-            res.send(result)
+            if (err) {
+                res.statusCode=500;
+                res.end();
+            } else {
+                res.status(201).send(result)
+            }
         });
         client.close();
     });
