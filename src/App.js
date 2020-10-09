@@ -6,7 +6,7 @@ import {
 
 import Add from './components/Add'
 import Search from './components/Search'
-import MuseumList from './components/MuseumsList'
+import Update from './components/Update'
 
 import './App.css'
 
@@ -22,6 +22,7 @@ const App = () =>{
           <div>
             <Link style={padding} to="/">search</Link>
             <Link style={padding} to="/add">add</Link>
+            <Link style={padding} to="/update">update</Link>
           </div>
           <Switch>
             <Route exact path="/">
@@ -30,6 +31,9 @@ const App = () =>{
             </Route>
             <Route path="/add">
               <Add classname="myform"/>
+            </Route>
+            <Route path="/update">
+              <Update classname="myform"/>
             </Route>
           </Switch>
         </Router>

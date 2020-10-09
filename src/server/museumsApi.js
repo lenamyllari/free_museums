@@ -227,7 +227,25 @@ router.put('/museums/update', (req, res) => {
     const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
     client.connect(err => {
         const collection = client.db(dbName).collection(collectionName);
-        collection.find({name: museo.name}).updateOne(museo, function (err, result) {
+        collection.update(
+            {name: museo.name},
+            {
+                city: museo.city,
+                address: museo.address,
+                link: museo.link,
+                hours: {
+                    monday: museo.hours.monday,
+                    tuesday: museo.hours.tuesday,
+                    wednesday: museo.hours.wednesday,
+                    thursday: museo.hours.thursday,
+                    friday: museo.hours.friday,
+                    saturday: museo.hours.saturday,
+                    sunday: museo.hours.sunday
+                },
+                services: museo.services,
+                themes: museo.themes
+            },
+            function (err, result) {
             if (err) {
                 res.statusCode=500;
                 res.end();
