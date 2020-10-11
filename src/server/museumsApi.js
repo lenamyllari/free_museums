@@ -53,7 +53,10 @@ router.get('/museums/all', (req, res) => {
         await collection.find().toArray(function (err, result) {
             if (err) {
                 res.statusCode=500;
-                res.end();
+                res.end("500 Internal Server Error");
+            } else if (result.length === 0) {
+                res.statusCode=404;
+                res.end("404 Not Found");
             } else {
                 console.log(result);
                 res.status(200).send(result)
@@ -68,7 +71,7 @@ router.get('/museums/themes', (req, res) => {
     var theme = q.theme
     if (isStringEmpty(theme)) {
         res.statusCode=400;
-        res.end();
+        res.end("400 Bad Request");
     }
     else {
         const client = new MongoClient(dbConnectionUrl, {useNewUrlParser: true});
@@ -77,10 +80,10 @@ router.get('/museums/themes', (req, res) => {
             collection.find({"themes": q.theme}).toArray(function (err, result) {
                 if (err) {
                     res.statusCode=500;
-                    res.end();
+                    res.end("500 Internal Server Error");
                 } else if (result.length === 0) {
                     res.statusCode=404;
-                    res.end();
+                    res.end("404 Not Found");
                 } else {
                     console.log(result);
                     res.status(200).send(result);
@@ -96,7 +99,7 @@ router.get('/museums/city', (req, res) => {
     var city = q.city;
     if (isStringEmpty(city)) {
         res.statusCode=400;
-        res.end();
+        res.end("400 Bad Request");
        // return res.send(createError(400));
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
@@ -105,10 +108,10 @@ router.get('/museums/city', (req, res) => {
             collection.find({city: city}).toArray(function (err, result) {
                 if (err) {
                     res.statusCode=500;
-                    res.end();
+                    res.end("500 Internal Server Error");
                 } else if (result.length === 0) {
                     res.statusCode=404;
-                    res.end();
+                    res.end("404 Not Found");
                 } else {
                     console.log(result);
                     res.status(200).send(result)
@@ -124,7 +127,7 @@ router.get('/museums/name', (req, res) => {
     var name = q.name;
     if (isStringEmpty(name)) {
         res.statusCode=400;
-        res.end();
+        res.end("400 Bad Request");
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {
@@ -132,10 +135,10 @@ router.get('/museums/name', (req, res) => {
             collection.find({name: name}).toArray(function (err, result) {
                 if (err) {
                     res.statusCode=500;
-                    res.end();
+                    res.end("500 Internal Server Error");
                 } else if (result.length === 0) {
                     res.statusCode=404;
-                    res.end();
+                    res.end("404 Not Found");
                 } else {
                     console.log(result);
                     res.status(200).send(result);
@@ -151,7 +154,7 @@ router.get('/museums/services', (req, res) => {
     var service = q.service;
     if (isStringEmpty(service)) {
         res.statusCode=400;
-        res.end();
+        res.end("400 Bad Request");
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {
@@ -159,10 +162,10 @@ router.get('/museums/services', (req, res) => {
             collection.find({"services": service}).toArray(function (err, result) {
                 if (err) {
                     res.statusCode=500;
-                    res.end();
+                    res.end("500 Internal Server Error");
                 } else if (result.length === 0) {
                     res.statusCode=404;
-                    res.end();
+                    res.end("404 Not Found");
                 } else {
                     console.log(result);
                     res.status(200).send(result);
@@ -180,7 +183,7 @@ router.get('/museums/hours', (req, res) => {
     const qString = 'hours.' + day
     if (isStringEmpty(day) || !isWeekday(day)) {
         res.statusCode=400;
-        res.end();
+        res.end("400 Bad Request");
     } else {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(async err => {
@@ -188,10 +191,10 @@ router.get('/museums/hours', (req, res) => {
             await collection.find({$and: [{"hours": {$ne: null}},{[qString]: {$ne: "Suljettu"}}]}).toArray(function (err, result) {
                 if (err) {
                     res.statusCode=500;
-                    res.end();
+                    res.end("500 Internal Server Error");
                 } else if (result.length === 0) {
                     res.statusCode=404;
-                    res.end();
+                    res.end("404 Not Found");
                 } else {
                     res.status(200).send(result);
                 }
@@ -211,7 +214,7 @@ router.post('museums/add', (req, res) =>{
         collection.insertOne(museo, function (err, result) {
             if (err) {
                 res.statusCode=500;
-                res.end();
+                res.end("500 Internal Server Error");
             } else {
                 res.status(201).send(result);
             }
@@ -265,9 +268,9 @@ router.delete('/museums/delete', (req, res) => {
         const collection = client.db(dbName).collection(collectionName);
         collection.deleteOne({name: name}, function (err, result) {
             if (err) {
-                throw err;
+                res.status(500).end("500 Internal Server Error");
             } else {
-                res.status(200).send(result);
+                res.status(204).end();
             }
         });
         client.close();
