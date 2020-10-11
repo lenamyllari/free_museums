@@ -263,18 +263,25 @@ router.put('/museums/update', (req, res) => {
 router.delete('/museums/delete', (req, res) => {
     var q = url.parse(req.url, true).query;
     var name = q.name;
-    const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
-    client.connect(err => {
-        const collection = client.db(dbName).collection(collectionName);
-        collection.deleteOne({name: name}, function (err, result) {
-            if (err) {
-                res.status(500).end("500 Internal Server Error");
-            } else {
-                res.status(204).end();
-            }
+    if (isStringEmpty(name)) {
+        res.statusCode=400;
+        res.end("400 Bad Request");
+    } else {
+        const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
+        client.connect(err => {
+            const collection = client.db(dbName).collection(collectionName);
+            collection.deleteOne({name: name}, function (err, result) {
+                if (err) {
+                    res.status(500).end("500 Internal Server Error");
+                } else if (result.deletedCount === 0) {
+                    res.status(404).end("404 Not Found");
+                } else {
+                    res.status(204).end();
+                }
+            });
+            client.close();
         });
-        client.close();
-    });
+    }
 })
 
 function getMuseum(req) {
