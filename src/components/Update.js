@@ -50,6 +50,7 @@ export default class Update extends Component {
             axios
                 .get(uri)
                 .then(res => {
+                    console.log(res.data)
                     this.setState({
                         isLoaded: true,
                         museum: res.data,
@@ -59,19 +60,29 @@ export default class Update extends Component {
                         city: res.data.city,
                         address: res.data.address,
 
-                        monday: res.data.hours.monday,
-                        tuesday: res.data.hours.tuesday,
-                        wednesday: res.data.hours.wednesday,
-                        thursday: res.data.hours.thursday,
-                        friday: res.data.hours.friday,
-                        saturday: res.data.hours.saturday,
-                        sunday: res.data.hours.sunday,
-
-                        services: res.data.services,
-                        themes: res.data.themes,
-
                         selectedMuseum: null,
                     });
+                    if(res.data.hours){
+                        this.setState({
+                            monday: res.data.hours.monday,
+                            tuesday: res.data.hours.tuesday,
+                            wednesday: res.data.hours.wednesday,
+                            thursday: res.data.hours.thursday,
+                            friday: res.data.hours.friday,
+                            saturday: res.data.hours.saturday,
+                            sunday: res.data.hours.sunday,
+                        });
+                    }
+                    if(res.data.services){
+                        this.setState({
+                            services: res.data.services,
+                        });
+                    }
+                    if(res.data.themes){
+                        this.setState({
+                            themes: res.data.themes,
+                        });
+                    }
                 })
                 .catch(err => {
                     console.log(err);
@@ -186,7 +197,7 @@ export default class Update extends Component {
                         <label className="row">Monday
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.hours.monday}
+                                defaultValue={this.state.monday}
                                    onChange={(event) => {
                                        this.setState({monday: event.target.value})
                                    }}/>
@@ -194,7 +205,7 @@ export default class Update extends Component {
                         <label className="row">Tuesday
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.hours.tuesday}
+                                defaultValue={this.state.tuesday}
                                    onChange={(event) => {
                                        this.setState({tuesday: event.target.value})
                                    }}/>
@@ -202,7 +213,7 @@ export default class Update extends Component {
                         <label className="row">Wednesday
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.hours.wednesday}
+                                defaultValue={this.state.wednesday}
                                    onChange={(event) => {
                                        this.setState({wednesday: event.target.value})
                                    }}/>
@@ -210,7 +221,7 @@ export default class Update extends Component {
                         <label className="row">Thursday
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.hours.thursday}
+                                defaultValue={this.state.thursday}
                                    onChange={(event) => {
                                        this.setState({thursday: event.target.value})
                                    }}/>
@@ -218,7 +229,7 @@ export default class Update extends Component {
                         <label className="row">Friday
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.hours.friday}
+                                defaultValue={this.state.friday}
                                    onChange={(event) => {
                                        this.setState({friday: event.target.value})
                                    }}/>
@@ -226,7 +237,7 @@ export default class Update extends Component {
                         <label className="row">Saturday
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.hours.saturday}
+                                defaultValue={this.state.saturday}
                                    onChange={(event) => {
                                        this.setState({saturday: event.target.value})
                                    }}/>
@@ -234,7 +245,7 @@ export default class Update extends Component {
                         <label className="row">Sunday
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.hours.sunday}
+                                defaultValue={this.state.sunday}
                                    onChange={(event) => {
                                        this.setState({sunday: event.target.value})
                                    }}/>
@@ -244,7 +255,7 @@ export default class Update extends Component {
                         <label className="row">service
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.services}
+                                defaultValue={this.state.services}
                                    onChange={(event) => {
                                        this.setState({services: event.target.value})
                                    }}/>
@@ -254,7 +265,7 @@ export default class Update extends Component {
                         <label className="row">theme
                             <input
                                 style={{marginLeft: "10px"}}
-                                defaultValue={museum.themes}
+                                defaultValue={this.state.themes}
                                    onChange={(event) => {
                                        this.setState({themes: event.target.value})
                                    }}/>
