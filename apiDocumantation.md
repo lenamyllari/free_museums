@@ -476,6 +476,7 @@
     
     * **Body Params**
     
+      ```
       Museum - the museum to be added
       name:  the name of the museum (string)
       link: the link to the museum's website (string)
@@ -491,7 +492,7 @@
         sunday: the museum's opening hours on Sundays (string)
       },
       services: the services provided by the museum [string],
-      themes: the themes of the museum [string]
+      themes: the themes of the museum [string]```
     
     * **Success Response:**
     
@@ -512,6 +513,7 @@
               url: "/museums/add",
               dataType: "json",
               type : "POST",
+              body: {},
               success : function(r) {
                 console.log(r);
               }
@@ -535,6 +537,7 @@
   
   * **Body Params**
   
+    ```
     Museum - the museum to be updated
           name:  the name of the museum (string)
           link: the link to the museum's website (string)
@@ -550,7 +553,7 @@
             sunday: the museum's opening hours on Sundays (string)
           },
           services: the services provided by the museum [string],
-          themes: the themes of the museum [string]
+          themes: the themes of the museum [string]```
   
   * **Success Response:**
   
@@ -573,6 +576,7 @@
           url: "/museums/update/",
           dataType: "json",
           type : "PUT",
+          body: {},
           success : function(r) {
             console.log(r);
           }
@@ -592,7 +596,7 @@
       
     *  **Query Params**
     
-      name (string) - the name of the museum to be deleted
+      ```name (string) - the name of the museum to be deleted```
     
     * **Body Params**
     
@@ -615,7 +619,7 @@
     
       ```javascript
             $.ajax({
-              url: "/museums/delete",
+              url: "/museums/delete/?name=",
               dataType: "json",
               type : "DELETE",
               success : function(r) {
