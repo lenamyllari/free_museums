@@ -51,27 +51,26 @@ export default class Update extends Component {
                 .then(res => {
                     this.setState({
                         isLoaded: true,
-                        museum: res.data[0],
+                        museum: res.data,
 
-                        name: res.data[0].name,
-                        link: res.data[0].link,
-                        city: res.data[0].city,
-                        address: res.data[0].address,
+                        name: res.data.name,
+                        link: res.data.link,
+                        city: res.data.city,
+                        address: res.data.address,
 
-                        monday: res.data[0].hours.monday,
-                        tuesday: res.data[0].hours.tuesday,
-                        wednesday: res.data[0].hours.wednesday,
-                        thursday: res.data[0].hours.thursday,
-                        friday: res.data[0].hours.friday,
-                        saturday: res.data[0].hours.saturday,
-                        sunday: res.data[0].hours.sunday,
+                        monday: res.data.hours.monday,
+                        tuesday: res.data.hours.tuesday,
+                        wednesday: res.data.hours.wednesday,
+                        thursday: res.data.hours.thursday,
+                        friday: res.data.hours.friday,
+                        saturday: res.data.hours.saturday,
+                        sunday: res.data.hours.sunday,
 
-                        services: res.data[0].services,
-                        themes: res.data[0].themes,
+                        services: res.data.services,
+                        themes: res.data.themes,
 
                         selectedMuseum: null,
                     });
-                    console.log(this.state.museum.address.length)
                 })
                 .catch(err => {
                     console.log(err);

@@ -122,7 +122,7 @@ router.get('/museums/name', (req, res) => {
         const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
         client.connect(err => {
             const collection = client.db(dbName).collection(collectionName);
-            collection.find({name: name}).toArray(function (err, result) {
+            collection.findOne({name: name}, function (err, result) {
                 if (err) {
                     res.status(500).send({code: "500", error: "Internal Server Error", message: "Something went wrong"});
                 } else if (result.length === 0) {
