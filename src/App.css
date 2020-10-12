@@ -41,6 +41,11 @@
   padding: 20px;
   font-family: Arial;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .myform{
@@ -60,3 +65,5 @@
   color: red;
   size: 30px;
 }
+
+
