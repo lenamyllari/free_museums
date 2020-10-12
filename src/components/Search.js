@@ -33,7 +33,7 @@ export default class Search  extends Component {
             .then(res => {
                 this.setState({
                     isLoaded: true,
-                    museums: res.data,
+                    museums: [res.data],
                     searchWord: ""
                 });
             })

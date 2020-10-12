@@ -126,8 +126,7 @@ router.get('/museums/name', (req, res) => {
                 if (err) {
                     res.status(500).send({code: "500", error: "Internal Server Error", message: "Something went wrong"});
                 } else if (result !== null) {
-                    console.log(result);
-                    res.status(200).send(result);
+                    res.status(200).send(JSON.stringify(result));
                 } else {
                     res.status(404).send({code: "404", error: "Not Found", message: "Could not find any museums with this name"});
                 }
@@ -268,6 +267,7 @@ router.delete('/museums/delete', (req, res) => {
 })
 
 function getMuseum(req) {
+    console.log(req.body.name)
     const museo = new Museum ({
         name:  req.body.name,
         link: req.body.link,
