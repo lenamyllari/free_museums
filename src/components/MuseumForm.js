@@ -1,8 +1,9 @@
 import Form from "@rjsf/core";
-import React, { useState }  from 'react'
-
+import React  from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+//schema for creating the form
 const schema = {
     title: "New museum",
     type: "object",
@@ -48,25 +49,16 @@ const schema = {
             items: {
                 type: "string"
             }
-
         },
-
-
-
     },
     "required": ["name", "link", "city", "address"]
 }
 
-
-
-//const log = (type) => console.log.bind(console, type);
-
 const MuseumForm = () => {
 
+    //data saving to database after submitting the form
     const onSubmit = ({formData}, e) => {
-        console.log("Data submitted: ",  formData)
         var request = require('request');
-    console.log(formData)
         var data = {
             url: "http://localhost:3001/api/museums/add",
             json: true,
@@ -75,10 +67,6 @@ const MuseumForm = () => {
             },
             body: formData
         }
-//Custom Header pass
-        var headersOpt = {
-            "content-type": "application/json",
-        };
         request.post(data, function(error, httpResponse, body){
             console.log(body);
         });
@@ -89,9 +77,7 @@ const MuseumForm = () => {
         <Form schema={schema}
               onChange={log("changed")}
               onSubmit={onSubmit}
-
         >
-
         </Form>
     )
 }

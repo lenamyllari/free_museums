@@ -39,6 +39,7 @@ export default class Update extends Component {
         });
     };
 
+    //when a museums is selected => get museum's details from the database
     museumSelect = (e) => {
         this.setState({museum: null})
         if (!this.state.selectedMuseum) {
@@ -77,6 +78,8 @@ export default class Update extends Component {
                 });
         }
     };
+
+    //saving the changes after submitting
     saveChanges = async (e) => {
         e.preventDefault();
         const museum = await this.getMuseum();
@@ -90,7 +93,8 @@ export default class Update extends Component {
             body: museum
         };
         request.put(data, function (error, httpResponse, body) {
-            console.log(body);
+            console.log(body)
+
         });
         this.setState({museum: null})
     };
@@ -115,6 +119,7 @@ export default class Update extends Component {
         };
     };
 
+    //getting info about all the museums for the database => data needed for Select options
     componentDidMount() {
         var uri = "http://localhost:3001/api/museums/all";
         axios
@@ -135,16 +140,16 @@ export default class Update extends Component {
         const {museum} = this.state;
         return (
             <div className="mystyle">
+                <div>
                 <h3>Choose a museum to update</h3>
                 {this.state.museumMissing && <p className="error">Select a museum first</p>}
                 <Select
-
-
                     value={selectedMuseum}
                     onChange={this.handleMuseumSelect}
                     options={this.state.museums.map(museum => ({value: museum.name, label: museum.name}))}
                 />
                 <button style={{margin: "10px"}} type="submit" onClick={this.museumSelect}>Search</button>
+                </div>
                 {this.state.museum && <div>
                     <form className="myform">
                         <label className="row">{museum.name}

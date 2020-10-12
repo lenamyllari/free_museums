@@ -24,15 +24,13 @@ export default class Search  extends Component {
             weekdayOptionMissing: false
         }
 
-
-
+      //searching for museums by name or city
     renderList =(event) => {
         var uri = "http://localhost:3001/api/museums/" + this.state.searchParameter.toLowerCase() + "/?" +
                     this.state.searchParameter.toLowerCase() + "="+this.state.searchWord;
         axios
             .get(uri)
             .then(res => {
-                console.log(res)
                 this.setState({
                     isLoaded: true,
                     museums: res.data,
@@ -42,18 +40,17 @@ export default class Search  extends Component {
             .catch(err => {
                 this.setState({isLoaded: false})
                 this.setState({error: err.message})
-                console.log(err.message);
             });
 
     }
 
+    //searching for museums by the theme
     themeSelect =(e) =>{
         if(!this.state.selectedThemeOption){
             this.setState({themeOptionMissing: true})
             this.setState({museums: []})
         }
         else {
-            console.log(this.state.selectedThemeOption)
             this.setState({themeOptionMissing: false})
             var uri = "http://localhost:3001/api/museums/themes/?theme=" + this.state.selectedThemeOption.value;
             axios
@@ -70,6 +67,7 @@ export default class Search  extends Component {
                 });
         }
     };
+
     handleThemeSelect= selectedThemeOption => {
         this.setState({
             selectedThemeOption: selectedThemeOption ,
@@ -82,6 +80,7 @@ export default class Search  extends Component {
         });
     };
 
+    //searching for museums by the service
     serviceSelect=(e) =>{
         if(!this.state.selectedServiceOption){
             this.setState({serviceOptionMissing: true})
@@ -105,6 +104,7 @@ export default class Search  extends Component {
         }
     };
 
+    //searching for museums by a weekday
     weekdaySelect=(e) =>{
         if(!this.state.selectedWeekdayOption){
             this.setState({weekdayOptionMissing: true})
@@ -116,7 +116,6 @@ export default class Search  extends Component {
             axios
                 .get(uri)
                 .then(res => {
-                    console.log(res)
                     this.setState({
                         isLoaded: true,
                         museums: res.data,
@@ -135,8 +134,7 @@ export default class Search  extends Component {
         });
     };
 
-
-
+    //getting all the museums from the database
     componentDidMount(){
         var uri = "http://localhost:3001/api/museums/all";
         axios
@@ -220,10 +218,12 @@ export default class Search  extends Component {
         )
     }
 
+    //name or the city that will be used for search
     onNameChange=(event)=>{
         this.setState({searchWord: event.target.value})
     };
 
+    //choosing the search - is it by name or by city
     onChangeValue =(e)=>  {
         this.setState({searchParameter: e.target.value})
     }
