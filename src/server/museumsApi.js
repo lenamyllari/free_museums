@@ -186,7 +186,7 @@ router.get('/museums/hours', (req, res) => {
     }
 })
 
-router.post('museums/add', (req, res) =>{
+router.post('/museums/add', (req, res) =>{
     console.log(req.body);      // your JSON
     const museo = getMuseum(req);
     console.log(museo)
