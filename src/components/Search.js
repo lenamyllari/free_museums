@@ -31,11 +31,20 @@ export default class Search  extends Component {
         axios
             .get(uri)
             .then(res => {
-                this.setState({
-                    isLoaded: true,
-                    museums: [res.data],
-                    searchWord: ""
-                });
+                if(this.state.searchParameter==="City") {
+                    this.setState({
+                        isLoaded: true,
+                        museums: res.data,
+                        searchWord: ""
+                    });
+                }
+                else{
+                    this.setState({
+                        isLoaded: true,
+                        museums: [res.data],
+                        searchWord: ""
+                    });
+                }
             })
             .catch(err => {
                 this.setState({isLoaded: false})
