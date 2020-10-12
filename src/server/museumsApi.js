@@ -125,11 +125,11 @@ router.get('/museums/name', (req, res) => {
             collection.findOne({name: name}, function (err, result) {
                 if (err) {
                     res.status(500).send({code: "500", error: "Internal Server Error", message: "Something went wrong"});
-                } else if (result.length === 0) {
-                    res.status(404).send({code: "404", error: "Not Found", message: "Could not find any museums with this name"});
-                } else {
+                } else if (result !== null) {
                     console.log(result);
                     res.status(200).send(result);
+                } else {
+                    res.status(404).send({code: "404", error: "Not Found", message: "Could not find any museums with this name"});
                 }
             });
             client.close();
@@ -190,6 +190,9 @@ router.post('museums/add', (req, res) =>{
     console.log(req.body);      // your JSON
     const museo = getMuseum(req);
     console.log(museo)
+    if (isStringEmpty(museo.name) || isStringEmpty(museo.link) || isStringEmpty(museo.city) || isStringEmpty(museo.address)) {
+        res.status(400).send({code: "400", error: "Bad Request", message: "Request parameter invalid or missing"});
+    }
     const client = new MongoClient(dbConnectionUrl, { useNewUrlParser: true });
     client.connect(err => {
         const collection = client.db(dbName).collection(collectionName);
@@ -234,7 +237,7 @@ router.put('/museums/update', (req, res) => {
             if (err) {
                 res.status(500).send({code: "500", error: "Internal Server Error", message: "Something went wrong"});
             } else {
-                res.status(201).send(result)
+                res.status(200).send(result)
             }
         });
         client.close();
@@ -282,6 +285,7 @@ function getMuseum(req) {
         services: req.body.services,
         themes: req.body.themes
     })
+    console.log(museo);
     return museo;
 }
 
