@@ -40,6 +40,7 @@ export default class Update extends Component {
     };
 
     museumSelect = (e) => {
+        this.setState({museum: null})
         if (!this.state.selectedMuseum) {
             this.setState({museumMissing: true})
         } else {
@@ -70,6 +71,7 @@ export default class Update extends Component {
 
                         selectedMuseum: null,
                     });
+                    console.log(this.state.museum.address.length)
                 })
                 .catch(err => {
                     console.log(err);
@@ -133,35 +135,43 @@ export default class Update extends Component {
         const {selectedMuseum} = this.state;
         const {museum} = this.state;
         return (
-            <div className="container">
+            <div className="mystyle">
                 <h3>Choose a museum to update</h3>
                 {this.state.museumMissing && <p className="error">Select a museum first</p>}
                 <Select
+
+
                     value={selectedMuseum}
                     onChange={this.handleMuseumSelect}
                     options={this.state.museums.map(museum => ({value: museum.name, label: museum.name}))}
                 />
-                <button type="submit" onClick={this.museumSelect}>Search</button>
+                <button style={{margin: "10px"}} type="submit" onClick={this.museumSelect}>Search</button>
                 {this.state.museum && <div>
-                    <form>
+                    <form className="myform">
                         <label className="row">{museum.name}
                         </label>
                         <label className="row">City
-                            <input defaultValue={museum.city}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.city}
                                    onChange={(event) => {
                                        this.setState({city: event.target.value})
                                    }}
                             />
                         </label>
                         <label className="row">Address
-                            <input defaultValue={museum.address}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.address}
                                    onChange={(event) => {
                                        this.setState({address: event.target.value})
                                    }}
                             />
                         </label>
                         <label className="row">URL
-                            <input defaultValue={museum.link}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.link}
                                    onChange={(event) => {
                                        this.setState({link: event.target.value})
                                    }}
@@ -170,43 +180,57 @@ export default class Update extends Component {
                         <br/>
                         <label className="row">Opening hours</label>
                         <label className="row">Monday
-                            <input defaultValue={museum.hours.monday}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.hours.monday}
                                    onChange={(event) => {
                                        this.setState({monday: event.target.value})
                                    }}/>
                         </label>
                         <label className="row">Tuesday
-                            <input defaultValue={museum.hours.tuesday}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.hours.tuesday}
                                    onChange={(event) => {
                                        this.setState({tuesday: event.target.value})
                                    }}/>
                         </label>
                         <label className="row">Wednesday
-                            <input defaultValue={museum.hours.wednesday}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.hours.wednesday}
                                    onChange={(event) => {
                                        this.setState({wednesday: event.target.value})
                                    }}/>
                         </label>
                         <label className="row">Thursday
-                            <input defaultValue={museum.hours.thursday}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.hours.thursday}
                                    onChange={(event) => {
                                        this.setState({thursday: event.target.value})
                                    }}/>
                         </label>
                         <label className="row">Friday
-                            <input defaultValue={museum.hours.friday}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.hours.friday}
                                    onChange={(event) => {
                                        this.setState({friday: event.target.value})
                                    }}/>
                         </label>
                         <label className="row">Saturday
-                            <input defaultValue={museum.hours.saturday}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.hours.saturday}
                                    onChange={(event) => {
                                        this.setState({saturday: event.target.value})
                                    }}/>
                         </label>
                         <label className="row">Sunday
-                            <input defaultValue={museum.hours.sunday}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.hours.sunday}
                                    onChange={(event) => {
                                        this.setState({sunday: event.target.value})
                                    }}/>
@@ -214,7 +238,9 @@ export default class Update extends Component {
                         <br/>
                         <label className="row">Services</label>
                         <label className="row">service
-                            <input defaultValue={museum.services}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.services}
                                    onChange={(event) => {
                                        this.setState({services: event.target.value})
                                    }}/>
@@ -222,7 +248,9 @@ export default class Update extends Component {
                         <br/>
                         <label className="row">Themes</label>
                         <label className="row">theme
-                            <input defaultValue={museum.themes}
+                            <input
+                                style={{marginLeft: "10px"}}
+                                defaultValue={museum.themes}
                                    onChange={(event) => {
                                        this.setState({themes: event.target.value})
                                    }}/>

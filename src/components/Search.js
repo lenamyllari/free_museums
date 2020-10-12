@@ -42,7 +42,7 @@ export default class Search  extends Component {
             .catch(err => {
                 this.setState({isLoaded: false})
                 this.setState({error: err.message})
-                console.log(err);
+                console.log(err.message);
             });
 
     }

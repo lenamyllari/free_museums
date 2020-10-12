@@ -214,6 +214,7 @@ router.put('/museums/update', (req, res) => {
         collection.update(
             {name: museo.name},
             {
+                name: museo.name,
                 city: museo.city,
                 address: museo.address,
                 link: museo.link,

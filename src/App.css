@@ -38,15 +38,18 @@
 }
 
 .mystyle {
-
-  padding: 40px;
+  padding: 20px;
   font-family: Arial;
   text-align: center;
 }
 
 .myform{
-  width: 50%;
-  background-color: dodgerblue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .museumList{
