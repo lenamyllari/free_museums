@@ -100,7 +100,44 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** ``
+    **Content:** `    {
+                          "_id": "5f79ad1c3915fa3dd8d0f71e",
+                          "name": "Helsingin kaupunginmuseo",
+                          "city": "Helsinki",
+                          "address": " Aleksanterinkatu 16, 00170 Helsinki",
+                          "link": "https://museot.fi/museohaku/index.php?museo_id=21099",
+                          "hours": {
+                              "monday": "11:00-19:00",
+                              "tuesday": "11:00-19:00",
+                              "wednesday": "11:00-19:00",
+                              "thursday": "11:00-19:00",
+                              "friday": "11:00-19:00",
+                              "saturday": "11:00-17:00",
+                              "sunday": "11:00-17:00"
+                          },
+                          "services": [
+                              "Esteetön sisäänpääsy",
+                              "Esteetön wc",
+                              "Istumapaikkoja näyttelytiloissa",
+                              "Kosketeltavia esineitä",
+                              "Lainattava pyörätuoli",
+                              "Tilattavissa opastuksia erityisryhmille",
+                              "Kahvila",
+                              "Kokoushuone",
+                              "Lastenhoitotila",
+                              "Leikkitila/tila perheille",
+                              "Museokauppa",
+                              "Oleskelutila istumapaikoilla",
+                              "Tila omien eväiden syönnille"
+                          ],
+                          "themes": [
+                              "Design ja arkkitehtuuri",
+                              "Historia",
+                              "Kansainvälistä",
+                              "Lapsille",
+                              "Satoja vuosia sitten"
+                          ]
+                      },`
 * **Error Response:**
 
   * **Code:** 400 BAD REQUEST <br />
@@ -182,7 +219,7 @@
                         "friday": "11:00-19:00",
                         "saturday": "11:00-17:00",
                         "sunday": "11:00-17:00"
-                        }},`'
+                        }}]`'
    
   * **Error Response:**
   
@@ -228,7 +265,31 @@
       * **Success Response:**
       
         * **Code:** 200 <br />
-          **Content:** ''
+          **Content:** `{
+                            "_id": "5f79a3173915fa3dd8d0f71a",
+                            "name": "Friitalan Nahkamuseo",
+                            "city": "Ulvila",
+                            "address": " Friitalantie 11 28400 Ulvila",
+                            "link": "https://museot.fi/museohaku/index.php?museo_id=22095",
+                            "hours": {
+                                "monday": "Suljettu",
+                                "tuesday": "Suljettu",
+                                "wednesday": "Suljettu",
+                                "thursday": "Suljettu",
+                                "friday": "Suljettu",
+                                "saturday": "Suljettu",
+                                "sunday": "Suljettu"
+                            },
+                            "services": [
+                                "Kahvila,Kosketeltavia esineitä,Myyntipiste,Pysäköintipaikka"
+                            ],
+                            "themes": [
+                                "Design ja arkkitehtuuri",
+                                "Erikoiset",
+                                "Historia",
+                                "Käsityö"
+                            ]
+                        }`
        
       * **Error Response:**
       
@@ -275,7 +336,39 @@
     * **Success Response:**
     
       * **Code:** 200 <br />
-        **Content:** ''
+        **Content:** `[
+                          {
+                              "_id": "5f79a35f3915fa3dd8d0f71b",
+                              "name": "Forssan Luontomuseo",
+                              "city": "Forssa",
+                              "address": " Wahreninkatu 4, A-rappu, Kehräämö (Kirjastotalo)",
+                              "link": "https://museot.fi/museohaku/index.php?museo_id=21049",
+                              "hours": {
+                                  "monday": "Suljettu",
+                                  "tuesday": "Suljettu",
+                                  "wednesday": "12:00-16:00",
+                                  "thursday": "Suljettu",
+                                  "friday": "12:00-16:00",
+                                  "saturday": "Auki",
+                                  "sunday": "12:00-16:00"
+                              },
+                              "services": [
+                                  "Esteetön sisäänpääsy",
+                                  "Esteetön wc",
+                                  "Invapysäköinti",
+                                  "Istumapaikkoja näyttelytiloissa",
+                                  "Kosketeltavia esineitä",
+                                  "Kokoushuone",
+                                  "Lastenhoitotila",
+                                  "Leikkitila/tila perheille",
+                                  "Museokauppa",
+                                  "Myyntipiste",
+                                  "Pysäköintipaikka",
+                                  "Tila omien eväiden syönnille"
+                              ],
+                              "themes": []
+                          }
+                          ]`
      
     * **Error Response:**
     
@@ -321,7 +414,28 @@
     * **Success Response:**
     
       * **Code:** 200 <br />
-        **Content:** ''
+        **Content:** `[
+                          {
+                              "_id": "5f79acff3915fa3dd8d0f71c",
+                              "services": [],
+                              "themes": [
+                                  "Nykytaide",
+                                  "Taide"
+                              ],
+                              "name": "Galleri Elverket",
+                              "link": "https://museot.fi/museohaku/index.php?museo_id=12022018",
+                              "city": "Raasepori",
+                              "address": " Gustav Wasas gata/Kustaa Vaasan katu 11,",
+                              "hours": {
+                                  "monday": "Suljettu",
+                                  "tuesday": "11:00-17:00",
+                                  "wednesday": "11:00-17:00",
+                                  "thursday": "11:00-17:00",
+                                  "friday": "11:00-17:00",
+                                  "saturday": "11:00-17:00",
+                                  "sunday": "11:00-17:00"
+                              }
+                          }]`
      
     * **Error Response:**
     
@@ -382,10 +496,12 @@
     * **Success Response:**
     
       * **Code:** 201 <br />
-        **Content:** ''
+        **Content:** `{"message": "Museum successfully added"}`
      
     * **Error Response:**
-    
+  
+      * **Code:** 400 BAD REQUEST <br />
+        **Content:** `{code: "400", error: "Bad Request", message: "Request parameter invalid or missing"}`
       * **Code:** 500 INTERNAL SERVER ERROR <br />
         **Content:** `{code: "500", error: "Internal Server Error", message: "Something went wrong"}`
     
@@ -439,11 +555,15 @@
   * **Success Response:**
   
     * **Code:** 200 <br />
-      **Content:** ''
+      **Content:** `{"message": "Museum successfully updated"}`
    
   * **Error Response:**
   
-    * **Code:** 500 INTERNAL SERVER ERROR <br />
+  * **Code:** 400 BAD REQUEST <br />
+      **Content:** `{code: "400", error: "Bad Request", message: "Request parameter invalid or missing"}`
+  * **Code:** 404 NOT FOUND <br />
+      **Content:** `{code: "404", error: "Not Found", message: "Could not find any museums with this name"}`
+  * **Code:** 500 INTERNAL SERVER ERROR <br />
       **Content:** `{code: "500", error: "Internal Server Error", message: "Something went wrong"}`
   
   * **Sample Call:**
@@ -480,15 +600,15 @@
     
     * **Success Response:**
     
-      * **Code:** 204 <br />
-        **Content:** ''
+      * **Code:** 200 <br />
+        **Content:** `{"message": "Museum successfully deleted"}`
      
     * **Error Response:**
     
     * **Code:** 400 BAD REQUEST <br />
         **Content:** `{code: "400", error: "Bad Request", message: "Request parameter invalid or missing"}`
     * **Code:** 404 NOT FOUND <br />
-        **Content:** `{code: "404", error: "Not Found", message: "Could not find any museums with this name"}
+        **Content:** `{code: "404", error: "Not Found", message: "Could not find any museums with this name"}`
     * **Code:** 500 INTERNAL SERVER ERROR <br />
         **Content:** `{code: "500", error: "Internal Server Error", message: "Something went wrong"}`
     * **Sample Call:**
